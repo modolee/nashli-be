@@ -1,0 +1,22 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": "src",
+  "testRegex": ".spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "verbose": true,
+  "coverageDirectory": "../coverage",
+  "testEnvironment": "node",
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/$1",
+    "^@broadcast/(.*)$": "<rootDir>/broadcast/$1",
+    "^@database/(.*)$": "<rootDir>/database/$1",
+    "^@simple-timeline/(.*)$": "<rootDir>/simple-timeline/$1",
+    "^@timeline/(.*)$": "<rootDir>/timeline/$1"
+  }
+}

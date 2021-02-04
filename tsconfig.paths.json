@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@broadcast/*": ["./src/broadcast/*"],
+      "@database/*": ["./src/database/*"],
+      "@simple-timeline/*": ["./src/simple-timeline/*"],
+      "@timeline/*": ["./src/timeline/*"]
+    }
+  }
+}

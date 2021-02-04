@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { TimelineModule } from './timeline/timeline.module';
+import { BroadcastModule } from './broadcast/broadcast.module';
+import { SimpleTimelineModule } from './simple-timeline/simple-timeline.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [TimelineModule, BroadcastModule, SimpleTimelineModule],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
