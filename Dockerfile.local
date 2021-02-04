@@ -1,0 +1,10 @@
+FROM node:lts-alpine
+
+# /app 폴더를 WORKDIR로 설정
+WORKDIR '/app'
+
+# 포트 설정
+EXPOSE 8080
+
+# 실행할 명령어
+ENTRYPOINT ["yarn", "start:debug"]
