@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
+import { SimpleBroadcast } from '@simple-timelines/schemas/simple-broadcast.schema';
 
 /**
  * MongoDB 에서 사용하는 Type
@@ -7,14 +8,14 @@ import { Document, Types } from 'mongoose';
 const { ObjectId } = Types;
 
 /**
- * 개별 방송 테이블 (Collection)
+ * 단순화 시킨 타임라인 테이블 (Collection)
  */
 @Schema({
-  collection: 'Broadcasts',
+  collection: 'SimpleTimelines',
   timestamps: true,
   _id: true,
 })
-export class Broadcast {
+export class SimpleTimeline {
   /**
    * 인덱스
    */
@@ -31,15 +32,15 @@ export class Broadcast {
    * 상세 방송 데이터
    */
   @Prop({ type: Object })
-  broadcastsDetail: {};
+  simpleBroadcasts: {};
 }
 
 /**
  * 위에서 정의한 Class로 MongoDB를 위한 Schema를 생성
  */
-export const BroadcastSchema = SchemaFactory.createForClass(Broadcast);
+export const SimpleTimelineSchema = SchemaFactory.createForClass(SimpleTimeline);
 
 /**
- * Broadcast에 MongoDB Document 기본 속성을 결합
+ * SimpleTimeline에 MongoDB Document 기본 속성을 결합
  */
-export type BroadcastDocument = Broadcast & Document;
+export type SimpleTimelineDocument = SimpleTimeline & Document;

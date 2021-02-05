@@ -6,7 +6,12 @@ dayjs.extend(timezone);
 
 export const DEFAULT_TIMEZONE = 'Asia/Seoul';
 
-export const getToday = (format = 'YYYY-MM-DD', timezone = DEFAULT_TIMEZONE) =>
+export const getDateString = (date, format = 'YYYY-MM-DD', timezone = DEFAULT_TIMEZONE) =>
+  dayjs(date)
+    .tz(timezone)
+    .format(format);
+
+export const getTodayString = (format = 'YYYY-MM-DD', timezone = DEFAULT_TIMEZONE) =>
   dayjs()
     .tz(timezone)
     .format(format);

@@ -16,4 +16,12 @@ export class TimelinesService {
     const createdTimeline = new this.timelineModel(createTimeline);
     return createdTimeline.save();
   }
+
+  /**
+   * 조회
+   * @param date
+   */
+  async findLatest(date: string) {
+    return this.timelineModel.findOne({ date }).sort({ updatedAt: -1 });
+  }
 }

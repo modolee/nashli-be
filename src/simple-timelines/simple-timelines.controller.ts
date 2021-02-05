@@ -1,11 +1,12 @@
 import { Controller, Get, Request, Query } from '@nestjs/common';
-import { SimpleTimelinesService } from '@simple-timelines/simple-timelines.service';
+import { SimpleTimelinesService } from '@simple-timelines/services/simple-timelines.service';
 
 @Controller('simple-timeline')
 export class SimpleTimelinesController {
   constructor(private readonly simpleTimelineService: SimpleTimelinesService) {}
   @Get()
   async getSimpleTimeline(@Request() request, @Query() query) {
-    return this.simpleTimelineService.getSimpleTimeline();
+    const date = query.date;
+    return this.simpleTimelineService.findLatest(date);
   }
 }

@@ -1,25 +1,28 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { DatabaseService } from '@database/database.service';
 import { DatabaseModule } from '@database/database.module';
-import { TimelineService } from '@timeline/services/timeline.service';
-import { TimelineModule } from '@timeline/timeline.module';
+import { TimelinesService } from '@timelines/services/timelines.service';
+import { TimelinesModule } from '@timelines/timelines.module';
 import timelineDummy from '@dummies/timeline.json';
-import { TimelineRepository } from '@timeline/repositories/timeline.repository';
-import exp from 'constants';
+import { TimelineRepository } from '@timelines/repositories/timeline.repository';
+import { getStartOfDayTimestamp, getTodayString } from '@common/helpers/time.helper';
 
 describe('TimelineService', () => {
   let module: TestingModule;
-  let service: TimelineService;
+  let service: TimelinesService;
   let repository: TimelineRepository;
   let databaseService: DatabaseService;
 
+  // GIVEN
+  const today = getTodayString();
+
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      imports: [DatabaseModule, TimelineModule],
+      imports: [DatabaseModule, TimelinesModule],
       providers: [],
     }).compile();
 
-    service = module.get<TimelineService>(TimelineService);
+    service = module.get<TimelinesService>(TimelinesService);
     repository = module.get<TimelineRepository>(TimelineRepository);
     databaseService = module.get<DatabaseService>(DatabaseService);
   });
@@ -33,11 +36,12 @@ describe('TimelineService', () => {
     expect(service).toBeDefined();
   });
 
-  it.only('Get timeline data - 성공', async () => {
+  it('Get timeline data - 성공', async () => {
     // GIVEN
+    const startOfTodayTimestamp = getStartOfDayTimestamp(today);
 
     // WHEN
-    const { list, next } = await repository.getTimeline();
+    const { list, next } = await repository.getTimeline(startOfTodayTimestamp);
 
     // THEN
     expect(list.length).toBeGreaterThan(0);
@@ -45,11 +49,22 @@ describe('TimelineService', () => {
 
   it('Create Timeline - 성공', async () => {
     // GIVEN
-    const broadcastDate = new Date(2021, 2, 5);
+    const timeline = { date: today, broadcasts: timelineDummy.list };
+
     // WHEN
-    const createdTimeline = await service.create({ broadcastDate, timelineData: timelineDummy });
+    const createdTimeline = await service.create(timeline);
 
     // THEN
-    expect(createdTimeline).toMatchObject({ broadcastDate, timelineData: timelineDummy });
+    expect(createdTimeline).toMatchObject(timeline);
+  });
+
+  it.only('Find Timeline - 성공', async () => {
+    // GIVEN
+
+    // WHEN
+    const savedTimeline = await service.findLatest(today);
+
+    // THEN
+    console.log(savedTimeline);
   });
 });
