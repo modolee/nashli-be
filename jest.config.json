@@ -14,9 +14,12 @@
   "testEnvironment": "node",
   "moduleNameMapper": {
     "^@/(.*)$": "<rootDir>/$1",
-    "^@broadcast/(.*)$": "<rootDir>/broadcast/$1",
+    "^@broadcasts/(.*)$": "<rootDir>/broadcasts/$1",
+    "^@common/(.*)$": "<rootDir>/common/$1",
+    "^@dummies/(.*)$": "<rootDir>/../dummies/$1",
     "^@database/(.*)$": "<rootDir>/database/$1",
-    "^@simple-timeline/(.*)$": "<rootDir>/simple-timeline/$1",
-    "^@timeline/(.*)$": "<rootDir>/timeline/$1"
+    "^@scheduled-tasks/(.*)$": "<rootDir>/scheduled-tasks/$1",
+    "^@simple-timelines/(.*)$": "<rootDir>/simple-timelines/$1",
+    "^@timelines/(.*)$": "<rootDir>/timelines/$1"
   }
 }

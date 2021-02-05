@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
-import { TimelineModule } from './timeline/timeline.module';
-import { BroadcastModule } from './broadcast/broadcast.module';
-import { SimpleTimelineModule } from './simple-timeline/simple-timeline.module';
+import { TimelinesModule } from '@timelines/timelines.module';
+import { BroadcastsModule } from '@broadcasts/broadcasts.module';
+import { SimpleTimelinesModule } from '@simple-timelines/simple-timelines.module';
+import { ScheduledTasksModule } from '@scheduled-tasks/scheduled-tasks.module';
 
 @Module({
-  imports: [TimelineModule, BroadcastModule, SimpleTimelineModule],
+  imports: [TimelinesModule, BroadcastsModule, SimpleTimelinesModule, ScheduledTasksModule],
   controllers: [],
   providers: [],
 })

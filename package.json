@@ -14,11 +14,11 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test": "jest --config ./jest.config.json --runInBand",
+    "test:watch": "yarn test --watch",
+    "test:cov": "yarn test --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand --config ./jest.config.json",
+    "test:e2e": "jest --config ./test/jest-e2e.config.json --runInBand"
   },
   "dependencies": {
     "@nestjs/common": "^7.0.0",
@@ -26,6 +26,8 @@
     "@nestjs/mongoose": "^7.2.2",
     "@nestjs/platform-express": "^7.0.0",
     "@nestjs/schedule": "^0.4.2",
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
     "mongoose": "^5.10.3",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",

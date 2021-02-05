@@ -3,10 +3,13 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"],
-      "@broadcast/*": ["./src/broadcast/*"],
+      "@broadcasts/*": ["./src/broadcasts/*"],
+      "@common/*": ["./src/common/*"],
       "@database/*": ["./src/database/*"],
-      "@simple-timeline/*": ["./src/simple-timeline/*"],
-      "@timeline/*": ["./src/timeline/*"]
+      "@dummies/*": ["./dummies/*"],
+      "@scheduled-tasks/*": ["./src/scheduled-tasks/*"],
+      "@simple-timelines/*": ["./src/simple-timelines/*"],
+      "@timelines/*": ["./src/timelines/*"]
     }
   }
 }
