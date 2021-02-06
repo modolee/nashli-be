@@ -61,14 +61,15 @@ export class SimpleTimelinesTask {
 
       // 타임라인 전체를 돌면서 방송ID, 방송제목, 시작시간, URL을 추출
       // 세부 방송 정보에서는 네이버페이 지급 여부를 확인
-      timeline.broadcasts.map(({ broadcastId, broadcastTitle, expectedStartDate, broadcastEndUrl }) => {
+      timeline.broadcasts.map(({ broadcastId, broadcastTitle, expectedStartDate, bridgeEndUrl, broadcastEndUrl }) => {
         const time = this.getShortTime(expectedStartDate);
         const contentsHtml = broadcast.broadcastsDetail[`${broadcastId}`].contentsHtml;
         const reward = this.getRewardType(contentsHtml);
 
         const simpleBroadcast = {
           title: broadcastTitle,
-          url: broadcastEndUrl,
+          broadcastUrl: broadcastEndUrl,
+          bridgeUrl: bridgeEndUrl,
           reward,
         };
 
