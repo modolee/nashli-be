@@ -36,14 +36,14 @@ export class TimelinesTask {
       });
 
       this.logger.log(`[${getNow()}] **END** - 방송 전체 타임라인 데이터를 가져와서 저장`);
-      sendTelegramMessage('[성공] 타임라인 저장');
+      sendTelegramMessage(`[${getNow()}] **성공** 타임라인 저장`);
 
       return createdTimeline;
     } catch (error) {
       this.logger.error(`[${getNow()}]`);
       this.logger.error(error);
 
-      sendTelegramMessage('[실패] 타임라인 저장');
+      sendTelegramMessage(`[${getNow()}] **실패** 타임라인 저장`);
       sendTelegramMessage(error);
     }
     return null;

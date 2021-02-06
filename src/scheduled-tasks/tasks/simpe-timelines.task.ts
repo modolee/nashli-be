@@ -86,14 +86,14 @@ export class SimpleTimelinesTask {
       });
 
       this.logger.log(`[${getNow()}] **END** - 단순화 시킨 타임라인 저장`);
-      sendTelegramMessage('[성공] 단순화 시킨 타임라인 저장');
+      sendTelegramMessage(`[${getNow()}] **성공** 단순화 시킨 타임라인 저장`);
 
       return createdSimpleTimeline;
     } catch (error) {
       this.logger.error(`[${getNow()}]`);
       this.logger.error(error);
 
-      sendTelegramMessage('[실패] 단순화 시킨 타임라인 저장');
+      sendTelegramMessage(`[${getNow()}] **실패** 단순화 시킨 타임라인 저장`);
       sendTelegramMessage(error);
     }
 

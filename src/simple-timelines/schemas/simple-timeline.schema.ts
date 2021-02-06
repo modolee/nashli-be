@@ -1,6 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
-import { SimpleBroadcast } from '@simple-timelines/schemas/simple-broadcast.schema';
 
 /**
  * MongoDB 에서 사용하는 Type

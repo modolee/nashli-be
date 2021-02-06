@@ -46,14 +46,14 @@ export class BroadcastsTask {
       });
 
       this.logger.log(`[${getNow()}] **END** - 개별 방송 데이터를 가져와서 저장`);
-      sendTelegramMessage('[성공] 상세 방송 정보 저장');
+      sendTelegramMessage(`[${getNow()}] **성공** 상세 방송 정보 저장`);
 
       return createdBroadcast;
     } catch (error) {
       this.logger.error(`[${getNow()}]`);
       this.logger.error(error);
 
-      sendTelegramMessage('[실패] 상세 방송 정보 저장');
+      sendTelegramMessage(`[${getNow()}] **실패** 상세 방송 정보 저장`);
       sendTelegramMessage(error);
     }
 
