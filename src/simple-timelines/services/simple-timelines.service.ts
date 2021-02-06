@@ -25,7 +25,9 @@ export class SimpleTimelinesService {
     let simpleTimeline = await this.simpleTimelineModel.findOne({ date }).sort({ updatedAt: -1 });
 
     if (!simpleTimeline) {
-      return this.simpleTimelineModel.findOne().sort({ updatedAt: -1 });
+      simpleTimeline = await this.simpleTimelineModel.findOne().sort({ updatedAt: -1 });
     }
+
+    return simpleTimeline;
   }
 }
