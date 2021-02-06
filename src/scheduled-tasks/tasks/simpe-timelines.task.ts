@@ -8,7 +8,6 @@ import { BroadcastsService } from '@broadcasts/services/broadcasts.service';
 import { SimpleTimeline } from '@simple-timelines/schemas/simple-timeline.schema';
 import { SimpleTimelinesService } from '@simple-timelines/services/simple-timelines.service';
 import { sendTelegramMessage } from '@common/helpers/telegram.helper';
-import { SimpleBroadcast } from '@simple-timelines/schemas/simple-broadcast.schema';
 
 @Injectable()
 export class SimpleTimelinesTask {
@@ -67,6 +66,7 @@ export class SimpleTimelinesTask {
         const reward = this.getRewardType(contentsHtml);
 
         const simpleBroadcast = {
+          id: broadcastId,
           title: broadcastTitle,
           broadcastUrl: broadcastEndUrl,
           bridgeUrl: bridgeEndUrl,
