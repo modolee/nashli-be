@@ -1,7 +1,7 @@
 import { Controller, Get, Request, Query } from '@nestjs/common';
 import { SimpleTimelinesService } from '@simple-timelines/services/simple-timelines.service';
 
-@Controller('simple-timeline')
+@Controller('schedule')
 export class SimpleTimelinesController {
   constructor(private readonly simpleTimelineService: SimpleTimelinesService) {}
   @Get()

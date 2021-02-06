@@ -1,4 +1,4 @@
-import { BROADCAST_API_ENDPOINT } from '@timelines/constants/url.constant';
+import { BROADCAST_API_ENDPOINT } from '@broadcasts/constants/url.constant';
 import axios from 'axios';
 
 /**
