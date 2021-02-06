@@ -119,6 +119,10 @@ export class SimpleTimelinesTask {
     if (savedTimeline && savedBroadcast) {
       // 개별 방송에 대한 정보를 가져와서 DB에 저장
       const createdSimpleTimeline: SimpleTimeline = await this.simplifyTimlinesAndSave(savedTimeline, savedBroadcast);
+
+      if (createdSimpleTimeline) {
+        sendTelegramMessage(JSON.stringify(createdSimpleTimeline));
+      }
     }
   }
 }
