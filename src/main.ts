@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { FE_URL, HEROKU_PORT } from '@common/constants/environment.constant';
+import { FE_URL, PORT } from '@common/constants/environment.constant';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -9,6 +9,6 @@ async function bootstrap() {
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true,
   });
-  await app.listen(HEROKU_PORT || 8080);
+  await app.listen(PORT || 8080);
 }
 bootstrap();
