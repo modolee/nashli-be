@@ -103,9 +103,9 @@ export class SimpleTimelinesTask {
 
   /**
    * 방송 전체 타임라임과 각 방송에 대한 정보를 조회하고 저장
-   * 매일 한국시간 00:03:00 에 실행
+   * 매일 한국시간 00:17:00 에 실행
    */
-  @Cron('0 3 0 * * *', { timeZone: DEFAULT_TIMEZONE })
+  @Cron('0 17 0 * * *', { timeZone: DEFAULT_TIMEZONE })
   async handleCron() {
     const today: string = getTodayString();
 
