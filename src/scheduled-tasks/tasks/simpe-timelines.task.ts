@@ -36,11 +36,14 @@ export class SimpleTimelinesTask {
     const REWARD_YES = '네이버 페이 포인트가 라이브 참여 선물로 함께 지급';
     const REWARD_MAYBE = '부적합한 시청 행위 및 타인에게 불쾌감을 주는 메시지';
 
-    if (contentsHtml.indexOf(REWARD_NO) !== -1) {
+    // HTML Tag 제거
+    let contentsWithoutHtml = contentsHtml.replace(/<[^>]*>?/gm, '');
+
+    if (contentsWithoutHtml.indexOf(REWARD_NO) !== -1) {
       return 'RewardNo';
-    } else if (contentsHtml.indexOf(REWARD_YES) !== -1) {
+    } else if (contentsWithoutHtml.indexOf(REWARD_YES) !== -1) {
       return 'RewardYes';
-    } else if (contentsHtml.indexOf(REWARD_MAYBE) !== -1) {
+    } else if (contentsWithoutHtml.indexOf(REWARD_MAYBE) !== -1) {
       return 'RewardMaybe';
     } else {
       return 'RewardNotSure';
