@@ -33,17 +33,38 @@ export class SimpleTimelinesTask {
    */
   getRewardType(contentsHtml: string) {
     const REWARD_NO = ['네이버 페이포인트 지급이 없', '네이버 페이포인트 지급되지 않'];
-    const REWARD_YES = '네이버 페이 포인트가 라이브 참여 선물로 함께 지급';
-    const REWARD_MAYBE = '부적합한 시청 행위 및 타인에게 불쾌감을 주는 메시지';
+    const REWARD_YES = ['네이버 페이 포인트가 라이브 참여 선물로 함께 지급'];
+    const REWARD_MAYBE = [
+      '네이버 페이 포인트가 지급되지 않을 수',
+      '부적합한 시청 행위 및 타인에게 불쾌감을 주는 메시지',
+      '부적합한 시청행위 및 타인에게 불쾌감을 주는 메시지',
+      '부적합한 시청 행위',
+    ];
 
     // HTML Tag 제거
     let contentsWithoutHtml = contentsHtml.replace(/<[^>]*>?/gm, '');
 
-    if (contentsWithoutHtml.indexOf(REWARD_NO[0]) !== -1 || contentsWithoutHtml.indexOf(REWARD_NO[1]) !== -1) {
+    let noResult,
+      yesResult,
+      maybeResult = false;
+
+    REWARD_NO.map(message => {
+      noResult = noResult || contentsWithoutHtml.indexOf(message) !== -1;
+    });
+
+    REWARD_YES.map(message => {
+      yesResult = yesResult || contentsWithoutHtml.indexOf(message) !== -1;
+    });
+
+    REWARD_MAYBE.map(message => {
+      maybeResult = maybeResult || contentsWithoutHtml.indexOf(message) !== -1;
+    });
+
+    if (noResult) {
       return 'RewardNo';
-    } else if (contentsWithoutHtml.indexOf(REWARD_YES) !== -1) {
+    } else if (yesResult) {
       return 'RewardYes';
-    } else if (contentsWithoutHtml.indexOf(REWARD_MAYBE) !== -1) {
+    } else if (maybeResult) {
       return 'RewardMaybe';
     } else {
       return 'RewardNotSure';
