@@ -32,14 +32,14 @@ export class SimpleTimelinesTask {
    * @param contentsHtml
    */
   getRewardType(contentsHtml: string) {
-    const REWARD_NO = '네이버 페이포인트 지급되지 않';
+    const REWARD_NO = ['네이버 페이포인트 지급이 없', '네이버 페이포인트 지급되지 않'];
     const REWARD_YES = '네이버 페이 포인트가 라이브 참여 선물로 함께 지급';
     const REWARD_MAYBE = '부적합한 시청 행위 및 타인에게 불쾌감을 주는 메시지';
 
     // HTML Tag 제거
     let contentsWithoutHtml = contentsHtml.replace(/<[^>]*>?/gm, '');
 
-    if (contentsWithoutHtml.indexOf(REWARD_NO) !== -1) {
+    if (contentsWithoutHtml.indexOf(REWARD_NO[0]) !== -1 || contentsWithoutHtml.indexOf(REWARD_NO[1]) !== -1) {
       return 'RewardNo';
     } else if (contentsWithoutHtml.indexOf(REWARD_YES) !== -1) {
       return 'RewardYes';
