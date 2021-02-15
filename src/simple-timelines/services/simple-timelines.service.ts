@@ -30,4 +30,22 @@ export class SimpleTimelinesService {
 
     return simpleTimeline;
   }
+
+  /**
+   * 최신 데이터 조회 후 갱신
+   * @param date
+   * @param createTimeline
+   */
+  async findLatestAndOverwrite(updateSimpleTimeline: CreateSimpleTimelineDto): Promise<SimpleTimeline> {
+    let updatedSimpleTimeline = await this.simpleTimelineModel.findOneAndUpdate(
+      { date: updateSimpleTimeline.date },
+      { simpleBroadcasts: updateSimpleTimeline.simpleBroadcasts },
+      {
+        new: true,
+        upsert: true,
+      },
+    );
+
+    return updatedSimpleTimeline;
+  }
 }

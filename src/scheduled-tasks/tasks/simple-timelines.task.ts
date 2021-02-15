@@ -105,7 +105,7 @@ export class SimpleTimelinesTask {
       });
 
       // 단순화 시킨 데이터를 DB에 저장
-      const createdSimpleTimeline = await this.simpleTimelinesService.create({
+      const createdSimpleTimeline = await this.simpleTimelinesService.findLatestAndOverwrite({
         date: timeline.date,
         simpleBroadcasts,
       });
@@ -127,9 +127,9 @@ export class SimpleTimelinesTask {
 
   /**
    * 방송 전체 타임라임과 각 방송에 대한 정보를 조회하고 저장
-   * 매일 한국시간으로 00시 05분 00초에 실행
+   * 매일 한국시간으로 00시,10~21시 05분 00초에 실행
    */
-  @Cron('0 5 0 * * *', { timeZone: DEFAULT_TIMEZONE })
+  @Cron('0 5 0,10-21 * * *', { timeZone: DEFAULT_TIMEZONE })
   async handleCron() {
     const today: string = getTodayString();
 

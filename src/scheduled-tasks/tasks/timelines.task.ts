@@ -30,7 +30,7 @@ export class TimelinesTask {
       const timelineData = await this.timelineRepository.getTimeline(startOfTodayTimestamp);
 
       // 조회한 데이터를 DB에 저장
-      const createdTimeline = await this.timelinesService.create({
+      const createdTimeline = await this.timelinesService.findLatestAndOverwrite({
         date,
         broadcasts: timelineData?.list,
       });
@@ -51,9 +51,9 @@ export class TimelinesTask {
 
   /**
    * 방송 전체 타임라임과 각 방송에 대한 정보를 조회하고 저장
-   * 매일 한국시간으로 00시 03분 00초에 실행
+   * 매일 한국시간으로 00시,10~21시 03분 00초에 실행
    */
-  @Cron('0 3 0 * * *', { timeZone: DEFAULT_TIMEZONE })
+  @Cron('0 3 0,10-21 * * *', { timeZone: DEFAULT_TIMEZONE })
   async handleCron() {
     const today: string = getTodayString();
 

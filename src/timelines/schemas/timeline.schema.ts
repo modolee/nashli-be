@@ -31,7 +31,7 @@ export class Timeline {
    * 타임라인 데이터
    */
   @Prop({ type: Array })
-  broadcasts: [];
+  broadcasts: any[];
 }
 
 /**
