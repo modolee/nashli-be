@@ -114,7 +114,7 @@ export class SimpleTimelinesTask {
       });
 
       this.logger.log(`[${getNow()}] **END** - 단순화 시킨 타임라인 저장`);
-      sendTelegramMessage(`[${getNow()}] **성공** 단순화 시킨 타임라인 저장`);
+      // sendTelegramMessage(`[${getNow()}] **성공** 단순화 시킨 타임라인 저장`);
 
       return createdSimpleTimeline;
     } catch (error) {

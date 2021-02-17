@@ -42,7 +42,7 @@ export class TimelinesTask {
       });
 
       this.logger.log(`[${getNow()}] **END** - 방송 전체 타임라인 데이터를 가져와서 저장`);
-      sendTelegramMessage(`[${getNow()}] **성공** 타임라인 저장`);
+      // sendTelegramMessage(`[${getNow()}] **성공** 타임라인 저장`);
 
       return createdTimeline;
     } catch (error) {
