@@ -16,6 +16,12 @@ export const getTodayString = (format = 'YYYY-MM-DD', timezone = DEFAULT_TIMEZON
     .tz(timezone)
     .format(format);
 
+export const getTomorrowString = (format = 'YYYY-MM-DD', timezone = DEFAULT_TIMEZONE) =>
+  dayjs()
+    .tz(timezone)
+    .add(1, 'day')
+    .format(format);
+
 export const getStartOfDayTimestamp = (date, timezone = DEFAULT_TIMEZONE) =>
   dayjs(date)
     .tz(timezone)

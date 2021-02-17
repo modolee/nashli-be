@@ -3,7 +3,13 @@ import { Cron } from '@nestjs/schedule';
 import { TimelineRepository } from '@timelines/repositories/timeline.repository';
 import { TimelinesService } from '@timelines/services/timelines.service';
 import { Timeline } from '@timelines/schemas/timeline.schema';
-import { DEFAULT_TIMEZONE, getStartOfDayTimestamp, getTodayString, getNow } from '@common/helpers/time.helper';
+import {
+  DEFAULT_TIMEZONE,
+  getStartOfDayTimestamp,
+  getTodayString,
+  getTomorrowString,
+  getNow,
+} from '@common/helpers/time.helper';
 import { sendTelegramMessage } from '@common/helpers/telegram.helper';
 
 @Injectable()
@@ -50,14 +56,31 @@ export class TimelinesTask {
   }
 
   /**
-   * 방송 전체 타임라임과 각 방송에 대한 정보를 조회하고 저장
-   * 매일 한국시간으로 00시,10~21시 03분 00초에 실행
+   * 크론 내부 로직
+   * @param date
    */
-  @Cron('0 3 0,10-21 * * *', { timeZone: DEFAULT_TIMEZONE })
-  async handleCron() {
-    const today: string = getTodayString();
-
+  private async _handleCron(date: string) {
     // 전체 타임라인 데이터를 가져와서 DB에 저장
-    const createdTimeline: Timeline = await this.getTimelineDataAndSave(today);
+    const createdTimeline: Timeline = await this.getTimelineDataAndSave(date);
+  }
+
+  /**
+   * 방송 전체 타임라임과 각 방송에 대한 정보를 조회하고 저장
+   * 매일 한국시간으로 23시 30분 10초에 실행
+   */
+  @Cron('10 30 23 * * *', { timeZone: DEFAULT_TIMEZONE })
+  async dailyCron() {
+    const tomorrow: string = getTomorrowString();
+    await this._handleCron(tomorrow);
+  }
+
+  /**
+   * 방송 전체 타임라임과 각 방송에 대한 정보를 조회하고 저장
+   * 매일 한국시간으로 09~21시 25,55분 10초에 실행
+   */
+  @Cron('10 25,55 9-21 * * *', { timeZone: DEFAULT_TIMEZONE })
+  async hourlyCron() {
+    const today: string = getTodayString();
+    await this._handleCron(today);
   }
 }
