@@ -94,4 +94,13 @@ export class BroadcastsTask {
     const today: string = getTodayString();
     await this._handleCron(today);
   }
+
+  /**
+   * 개발할 때 사용하는 테스트용 (평소에는 주석처리)
+   */
+  // @Cron('40 36 8 * * *', { timeZone: DEFAULT_TIMEZONE })
+  // async testCron() {
+  //   const today: string = getTodayString();
+  //   await this._handleCron(today);
+  // }
 }

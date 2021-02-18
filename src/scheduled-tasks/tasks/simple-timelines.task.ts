@@ -37,8 +37,12 @@ export class SimpleTimelinesTask {
       '네이버 페이 포인트가 라이브 참여 선물로 함께 지급',
       '라이브 시청만 해도 네이버페이포인트를 드려요',
     ];
-    const REWARD_MAYBE = [
+    const REWARD_PROBABLY = [
       '네이버 페이 포인트가 지급되지 않을 수',
+      '채팅 메시지 1회 이상 작성',
+      '네이버 페이 이용 약관 동의가 필요',
+    ];
+    const REWARD_MAYBE = [
       '부적합한 시청 행위 및 타인에게 불쾌감을 주는 메시지',
       '부적합한 시청행위 및 타인에게 불쾌감을 주는 메시지',
       '부적합한 시청 행위',
@@ -49,6 +53,7 @@ export class SimpleTimelinesTask {
 
     let noResult,
       yesResult,
+      probablyResult,
       maybeResult = false;
 
     REWARD_NO.map(message => {
@@ -59,6 +64,10 @@ export class SimpleTimelinesTask {
       yesResult = yesResult || contentsWithoutHtml.indexOf(message) !== -1;
     });
 
+    REWARD_PROBABLY.map(message => {
+      probablyResult = probablyResult || contentsWithoutHtml.indexOf(message) !== -1;
+    });
+
     REWARD_MAYBE.map(message => {
       maybeResult = maybeResult || contentsWithoutHtml.indexOf(message) !== -1;
     });
@@ -67,6 +76,8 @@ export class SimpleTimelinesTask {
       return 'RewardNo';
     } else if (yesResult) {
       return 'RewardYes';
+    } else if (probablyResult) {
+      return 'RewardProbably';
     } else if (maybeResult) {
       return 'RewardMaybe';
     } else {
@@ -165,4 +176,13 @@ export class SimpleTimelinesTask {
     const today: string = getTodayString();
     await this._handleCron(today);
   }
+
+  /**
+   * 개발할 때 사용하는 테스트용 (평소에는 주석처리)
+   */
+  // @Cron('50 36 8 * * *', { timeZone: DEFAULT_TIMEZONE })
+  // async testCron() {
+  //   const today: string = getTodayString();
+  //   await this._handleCron(today);
+  // }
 }
