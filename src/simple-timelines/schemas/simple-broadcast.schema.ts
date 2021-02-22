@@ -13,4 +13,9 @@ export interface SimpleBroadcast {
    * 네이버페이 지급 여부
    */
   reward: string;
+
+  /**
+   * 추가 정보
+   */
+  additionalInfo: string[];
 }

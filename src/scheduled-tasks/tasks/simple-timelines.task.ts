@@ -8,6 +8,7 @@ import { BroadcastsService } from '@broadcasts/services/broadcasts.service';
 import { SimpleTimeline } from '@simple-timelines/schemas/simple-timeline.schema';
 import { SimpleTimelinesService } from '@simple-timelines/services/simple-timelines.service';
 import { sendTelegramMessage } from '@common/helpers/telegram.helper';
+import he from 'he';
 
 @Injectable()
 export class SimpleTimelinesTask {
@@ -25,6 +26,38 @@ export class SimpleTimelinesTask {
    */
   getShortTime(time: string) {
     return time.split('T')[1].substr(0, 5);
+  }
+
+  /**
+   * HTML 제거
+   * @param contents
+   */
+  removeHtmlTag(contents: string) {
+    // HTML Tag 제거
+    return he.decode(contents.replace(/<[^>]*>?/gm, ''));
+  }
+
+  /**
+   * 추가 정보 조회
+   * @param contentsHtml
+   */
+  getAdditionalInfo(contentsHtml: string): string[] {
+    const ADDITIONAL_INFO = [`'안녕하세요' 외 2회 이상 채팅 참여`];
+
+    // HTML Tag 제거
+    let contentsWithoutHtml = this.removeHtmlTag(contentsHtml);
+
+    // 추가 정보 저장 변수
+    const additionalInfoResult: string[] = [];
+
+    // 댓글 2번 이상 기록해야 되는지 여부
+    ADDITIONAL_INFO.map(message => {
+      if (contentsWithoutHtml.indexOf(message) !== -1) {
+        additionalInfoResult.push(message);
+      }
+    });
+
+    return additionalInfoResult;
   }
 
   /**
@@ -49,29 +82,35 @@ export class SimpleTimelinesTask {
     ];
 
     // HTML Tag 제거
-    let contentsWithoutHtml = contentsHtml.replace(/<[^>]*>?/gm, '');
+    let contentsWithoutHtml = this.removeHtmlTag(contentsHtml);
 
+    // 결과를 저장하는 변수 선언
     let noResult,
       yesResult,
       probablyResult,
       maybeResult = false;
 
+    // 페이 지급 없음
     REWARD_NO.map(message => {
       noResult = noResult || contentsWithoutHtml.indexOf(message) !== -1;
     });
 
+    // 페이 지급 확정
     REWARD_YES.map(message => {
       yesResult = yesResult || contentsWithoutHtml.indexOf(message) !== -1;
     });
 
+    // 페이 지급 가능성 높음
     REWARD_PROBABLY.map(message => {
       probablyResult = probablyResult || contentsWithoutHtml.indexOf(message) !== -1;
     });
 
+    // 페이 지급 가능성 낮음
     REWARD_MAYBE.map(message => {
       maybeResult = maybeResult || contentsWithoutHtml.indexOf(message) !== -1;
     });
 
+    // 페이 지급 가능성 판단
     if (noResult) {
       return 'RewardNo';
     } else if (yesResult) {
@@ -102,6 +141,7 @@ export class SimpleTimelinesTask {
         const time = this.getShortTime(expectedStartDate);
         const contentsHtml = broadcast.broadcastsDetail[`${broadcastId}`].contentsHtml;
         const reward = this.getRewardType(contentsHtml);
+        const additionalInfo = this.getAdditionalInfo(contentsHtml);
 
         const simpleBroadcast = {
           id: broadcastId,
@@ -109,6 +149,7 @@ export class SimpleTimelinesTask {
           broadcastUrl: broadcastEndUrl,
           bridgeUrl: bridgeEndUrl,
           reward,
+          additionalInfo,
         };
 
         if (!simpleBroadcasts[time]) {
