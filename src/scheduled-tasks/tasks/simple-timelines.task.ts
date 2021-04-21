@@ -65,7 +65,7 @@ export class SimpleTimelinesTask {
    * @param contentsHtml
    */
   getRewardType(contentsHtml: string) {
-    const REWARD_NO = ['네이버 페이포인트 지급이 없', '네이버 페이포인트 지급되지 않'];
+    const REWARD_NO = ['네이버 페이포인트 지급이 없', '네이버 페이포인트 지급되지 않', '본 라이브 방송은 시청 보상 네이버 페이 포인트가 지급되지 않습니다.'];
     const REWARD_YES = [
       '네이버 페이 포인트가 라이브 참여 선물로 함께 지급',
       '라이브 시청만 해도 네이버페이포인트를 드려요',
