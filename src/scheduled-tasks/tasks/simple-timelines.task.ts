@@ -65,7 +65,12 @@ export class SimpleTimelinesTask {
    * @param contentsHtml
    */
   getRewardType(contentsHtml: string) {
-    const REWARD_NO = ['네이버 페이포인트 지급이 없', '네이버 페이포인트 지급되지 않', '본 라이브 방송은 시청 보상 네이버 페이 포인트가 지급되지 않습니다.', '본 라이브는 시청 보상 페이 포인트가 지급되지 않습니다.'];
+    const REWARD_NO = [
+      '네이버 페이포인트 지급이 없',
+      '네이버 페이포인트 지급되지 않',
+      '본 라이브 방송은 시청 보상 네이버 페이 포인트가 지급되지 않습니다.',
+      '본 라이브는 시청 보상 페이 포인트가 지급되지 않습니다.',
+    ];
     const REWARD_YES = [
       '네이버 페이 포인트가 라이브 참여 선물로 함께 지급',
       '라이브 시청만 해도 네이버페이포인트를 드려요',
@@ -138,24 +143,27 @@ export class SimpleTimelinesTask {
       // 타임라인 전체를 돌면서 방송ID, 방송제목, 시작시간, URL을 추출
       // 세부 방송 정보에서는 네이버페이 지급 여부를 확인
       timeline.broadcasts.map(({ broadcastId, broadcastTitle, expectedStartDate, bridgeEndUrl, broadcastEndUrl }) => {
-        const time = this.getShortTime(expectedStartDate);
-        const contentsHtml = broadcast.broadcastsDetail[`${broadcastId}`].contentsHtml;
-        const reward = this.getRewardType(contentsHtml);
-        const additionalInfo = this.getAdditionalInfo(contentsHtml);
+        // 세부 방송 정보가 있는 경우에만 단순화 한 타임라인에 추가
+        if (broadcast.broadcastsDetail[`${broadcastId}`]) {
+          const time = this.getShortTime(expectedStartDate);
+          const contentsHtml = broadcast.broadcastsDetail[`${broadcastId}`].contentsHtml;
+          const reward = this.getRewardType(contentsHtml);
+          const additionalInfo = this.getAdditionalInfo(contentsHtml);
 
-        const simpleBroadcast = {
-          id: broadcastId,
-          title: broadcastTitle,
-          broadcastUrl: broadcastEndUrl,
-          bridgeUrl: bridgeEndUrl,
-          reward,
-          additionalInfo,
-        };
+          const simpleBroadcast = {
+            id: broadcastId,
+            title: broadcastTitle,
+            broadcastUrl: broadcastEndUrl,
+            bridgeUrl: bridgeEndUrl,
+            reward,
+            additionalInfo,
+          };
 
-        if (!simpleBroadcasts[time]) {
-          simpleBroadcasts[time] = [simpleBroadcast];
-        } else {
-          simpleBroadcasts[time] = [simpleBroadcast, ...simpleBroadcasts[time]];
+          if (!simpleBroadcasts[time]) {
+            simpleBroadcasts[time] = [simpleBroadcast];
+          } else {
+            simpleBroadcasts[time] = [simpleBroadcast, ...simpleBroadcasts[time]];
+          }
         }
       });
 

@@ -33,10 +33,12 @@ export class BroadcastsTask {
       );
 
       const broadcastsDetail = {};
-      broadcastsData.map(broadcast =>
-        Object.entries(broadcast).map(([id, data]) => {
-          broadcastsDetail[id] = data;
-        }),
+      broadcastsData.map(
+        broadcast =>
+          broadcast &&
+          Object.entries(broadcast).map(([id, data]) => {
+            broadcastsDetail[id] = data;
+          }),
       );
 
       // 조회한 데이터를 DB에 저장

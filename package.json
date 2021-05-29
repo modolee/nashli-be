@@ -18,7 +18,8 @@
     "test:watch": "yarn test --watch",
     "test:cov": "yarn test --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand --config ./jest.config.json",
-    "test:e2e": "jest --config ./test/jest-e2e.config.json --runInBand"
+    "test:e2e": "jest --config ./test/jest-e2e.config.json --runInBand",
+    "test:docker": "docker exec -it nashli-be yarn test"
   },
   "dependencies": {
     "@nestjs/common": "^7.0.0",
