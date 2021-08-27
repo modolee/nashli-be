@@ -11,6 +11,8 @@ export class BroadcastRepository {
 
       if (result.status === 200) {
         return result.data;
+      } else {
+        console.error(result);
       }
     } catch (error) {
       console.error(error);

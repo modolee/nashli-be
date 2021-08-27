@@ -7,9 +7,11 @@ import { BroadcastRepository } from '@broadcasts/repositories/broadcast.reposito
 import { ScheduleModule } from '@nestjs/schedule';
 import { BroadcastsModule } from '@broadcasts/broadcasts.module';
 import { SimpleTimelinesModule } from '@simple-timelines/simple-timelines.module';
+import { ScheduledTasksController } from './scheduled-tasks.controller';
 
 @Module({
   imports: [ScheduleModule.forRoot(), TimelinesModule, BroadcastsModule, SimpleTimelinesModule],
   providers: [BroadcastRepository, TimelinesTask, BroadcastsTask, SimpleTimelinesTask],
+  controllers: [ScheduledTasksController],
 })
 export class ScheduledTasksModule {}

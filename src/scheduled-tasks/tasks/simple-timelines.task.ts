@@ -200,12 +200,16 @@ export class SimpleTimelinesTask {
     const savedBroadcast: Broadcast = await this.broadcastsService.findLatest(date);
 
     // 정상적으로 저장 한 경우에만 실행
-    if (savedTimeline?.broadcasts.length > 0 
-      && Object.keys(savedBroadcast?.broadcastsDetail).length > 0) {
+    if (
+      savedTimeline?.broadcasts?.length > 0 &&
+      savedBroadcast?.broadcastsDetail &&
+      Object.keys(savedBroadcast?.broadcastsDetail).length > 0
+    ) {
       // 개별 방송에 대한 정보를 가져와서 DB에 저장
-      const createdSimpleTimeline: SimpleTimeline = await this.simplifyTimlinesAndSave(savedTimeline, savedBroadcast);
+      return this.simplifyTimlinesAndSave(savedTimeline, savedBroadcast);
     } else {
       sendTelegramMessage(`[${getNow()}] **실패** 방송 데이터가 제대로 저장되어 있지 않음`);
+      return null;
     }
   }
 
@@ -216,7 +220,7 @@ export class SimpleTimelinesTask {
   @Cron('30 30 23 * * *', { timeZone: DEFAULT_TIMEZONE })
   async dailyCron() {
     const tomorrow: string = getTomorrowString();
-    await this._handleCron(tomorrow);
+    return this._handleCron(tomorrow);
   }
 
   /**
@@ -226,7 +230,7 @@ export class SimpleTimelinesTask {
   @Cron('30 25,55 9-21 * * *', { timeZone: DEFAULT_TIMEZONE })
   async hourlyCron() {
     const today: string = getTodayString();
-    await this._handleCron(today);
+    return this._handleCron(today);
   }
 
   /**

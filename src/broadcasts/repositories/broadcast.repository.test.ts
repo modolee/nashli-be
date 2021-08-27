@@ -19,7 +19,7 @@ describe('상세 방송 정보 조회 테스트', () => {
 
   test('상세 방송 정보 조회 방송 (정보가 없는 경우)', async () => {
     // GIVEN
-    const broadcastId = '139710';
+    const broadcastId = '139710n';
 
     // WHEN
     const result = await broadcastRepository.getBroadcast(broadcastId);

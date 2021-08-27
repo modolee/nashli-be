@@ -6,6 +6,10 @@ dayjs.extend(timezone);
 
 export const DEFAULT_TIMEZONE = 'Asia/Seoul';
 
+export const sleep = ms => {
+  return new Promise(resolve => setTimeout(resolve, ms));
+};
+
 export const getDateString = (date, format = 'YYYY-MM-DD', timezone = DEFAULT_TIMEZONE) =>
   dayjs(date)
     .tz(timezone)

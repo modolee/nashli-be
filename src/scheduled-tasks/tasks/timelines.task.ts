@@ -35,7 +35,7 @@ export class TimelinesTask {
       // 해당 날짜의 시작 시간부터 있는 전체 방송 타임라인 데이터를 조회
       const timelineData = await this.timelineRepository.getTimeline(startOfTodayTimestamp);
 
-      if(timelineData?.list?.length > 0)  {
+      if (timelineData?.list?.length > 0) {
         // 조회한 데이터를 DB에 저장
         const createdTimeline = await this.timelinesService.findLatestAndOverwrite({
           date,
@@ -65,7 +65,7 @@ export class TimelinesTask {
    */
   private async _handleCron(date: string) {
     // 전체 타임라인 데이터를 가져와서 DB에 저장
-    const createdTimeline: Timeline = await this.getTimelineDataAndSave(date);
+    return this.getTimelineDataAndSave(date);
   }
 
   /**
@@ -75,7 +75,7 @@ export class TimelinesTask {
   @Cron('10 30 23 * * *', { timeZone: DEFAULT_TIMEZONE })
   async dailyCron() {
     const tomorrow: string = getTomorrowString();
-    await this._handleCron(tomorrow);
+    return this._handleCron(tomorrow);
   }
 
   /**
@@ -85,7 +85,7 @@ export class TimelinesTask {
   @Cron('10 25,55 9-21 * * *', { timeZone: DEFAULT_TIMEZONE })
   async hourlyCron() {
     const today: string = getTodayString();
-    await this._handleCron(today);
+    return this._handleCron(today);
   }
 
   /**

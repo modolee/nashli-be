@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
 import { TimelinesService } from '@timelines/services/timelines.service';
-import { DEFAULT_TIMEZONE, getTodayString, getTomorrowString, getNow } from '@common/helpers/time.helper';
+import { DEFAULT_TIMEZONE, getTodayString, getTomorrowString, getNow, sleep } from '@common/helpers/time.helper';
 import { Timeline } from '@timelines/schemas/timeline.schema';
 import { BroadcastRepository } from '@broadcasts/repositories/broadcast.repository';
 import { Broadcast } from '@broadcasts/schemas/broadcast.schema';
@@ -27,9 +27,7 @@ export class BroadcastsTask {
       this.logger.log(`[${getNow()}] **START** - 개별 방송 데이터를 가져와서 저장`);
 
       const broadcastsData = await Promise.all(
-        timeline.broadcasts.map(({ broadcastId }) => {
-          return this.broadcastRepository.getBroadcast(broadcastId);
-        }),
+        timeline.broadcasts.map(({ broadcastId }) => this.broadcastRepository.getBroadcast(broadcastId)),
       );
 
       const broadcastsDetail = {};
@@ -41,7 +39,7 @@ export class BroadcastsTask {
           }),
       );
 
-      if(Object.keys(broadcastsDetail).length > 0) {
+      if (Object.keys(broadcastsDetail).length > 0) {
         // 조회한 데이터를 DB에 저장
         const createdBroadcast = await this.broadcastsService.findLatestAndOverwrite({
           date: timeline.date,
@@ -77,8 +75,10 @@ export class BroadcastsTask {
     // 정상적으로 저장 한 경우에만 실행
     if (savedTimeline) {
       // 개별 방송에 대한 정보를 가져와서 DB에 저장
-      const createdBroadcasts: Broadcast = await this.getBroadcastsDataAndSave(savedTimeline);
+      return this.getBroadcastsDataAndSave(savedTimeline);
     }
+
+    return null;
   }
 
   /**
@@ -88,7 +88,7 @@ export class BroadcastsTask {
   @Cron('20 30 23 * * *', { timeZone: DEFAULT_TIMEZONE })
   async dailyCron() {
     const tomorrow: string = getTomorrowString();
-    await this._handleCron(tomorrow);
+    return this._handleCron(tomorrow);
   }
 
   /**
@@ -98,7 +98,7 @@ export class BroadcastsTask {
   @Cron('20 25,55 9-21 * * *', { timeZone: DEFAULT_TIMEZONE })
   async hourlyCron() {
     const today: string = getTodayString();
-    await this._handleCron(today);
+    return this._handleCron(today);
   }
 
   /**
