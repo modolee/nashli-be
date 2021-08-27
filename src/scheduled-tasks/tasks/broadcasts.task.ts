@@ -41,16 +41,20 @@ export class BroadcastsTask {
           }),
       );
 
-      // 조회한 데이터를 DB에 저장
-      const createdBroadcast = await this.broadcastsService.findLatestAndOverwrite({
-        date: timeline.date,
-        broadcastsDetail,
-      });
+      if(Object.keys(broadcastsDetail).length > 0) {
+        // 조회한 데이터를 DB에 저장
+        const createdBroadcast = await this.broadcastsService.findLatestAndOverwrite({
+          date: timeline.date,
+          broadcastsDetail,
+        });
 
-      this.logger.log(`[${getNow()}] **END** - 개별 방송 데이터를 가져와서 저장`);
-      // sendTelegramMessage(`[${getNow()}] **성공** 상세 방송 정보 저장`);
+        this.logger.log(`[${getNow()}] **END** - 개별 방송 데이터를 가져와서 저장`);
+        // sendTelegramMessage(`[${getNow()}] **성공** 상세 방송 정보 저장`);
 
-      return createdBroadcast;
+        return createdBroadcast;
+      } else {
+        sendTelegramMessage(`[${getNow()}] **실패** 상세 방송 정보에 방송 목록이 없음`);
+      }
     } catch (error) {
       this.logger.error(`[${getNow()}]`);
       this.logger.error(error);

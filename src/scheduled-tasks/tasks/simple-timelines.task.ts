@@ -200,9 +200,12 @@ export class SimpleTimelinesTask {
     const savedBroadcast: Broadcast = await this.broadcastsService.findLatest(date);
 
     // 정상적으로 저장 한 경우에만 실행
-    if (savedTimeline && savedBroadcast) {
+    if (savedTimeline?.broadcasts.length > 0 
+      && Object.keys(savedBroadcast?.broadcastsDetail).length > 0) {
       // 개별 방송에 대한 정보를 가져와서 DB에 저장
       const createdSimpleTimeline: SimpleTimeline = await this.simplifyTimlinesAndSave(savedTimeline, savedBroadcast);
+    } else {
+      sendTelegramMessage(`[${getNow()}] **실패** 방송 데이터가 제대로 저장되어 있지 않음`);
     }
   }
 

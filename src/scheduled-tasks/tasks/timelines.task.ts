@@ -35,16 +35,20 @@ export class TimelinesTask {
       // 해당 날짜의 시작 시간부터 있는 전체 방송 타임라인 데이터를 조회
       const timelineData = await this.timelineRepository.getTimeline(startOfTodayTimestamp);
 
-      // 조회한 데이터를 DB에 저장
-      const createdTimeline = await this.timelinesService.findLatestAndOverwrite({
-        date,
-        broadcasts: timelineData?.list,
-      });
+      if(timelineData?.list?.length > 0)  {
+        // 조회한 데이터를 DB에 저장
+        const createdTimeline = await this.timelinesService.findLatestAndOverwrite({
+          date,
+          broadcasts: timelineData?.list,
+        });
 
-      this.logger.log(`[${getNow()}] **END** - 방송 전체 타임라인 데이터를 가져와서 저장`);
-      // sendTelegramMessage(`[${getNow()}] **성공** 타임라인 저장`);
+        this.logger.log(`[${getNow()}] **END** - 방송 전체 타임라인 데이터를 가져와서 저장`);
+        // sendTelegramMessage(`[${getNow()}] **성공** 타임라인 저장`);
 
-      return createdTimeline;
+        return createdTimeline;
+      } else {
+        sendTelegramMessage(`[${getNow()}] **실패** 타임라인에 방송 데이터 없음`);
+      }
     } catch (error) {
       this.logger.error(`[${getNow()}]`);
       this.logger.error(error);
