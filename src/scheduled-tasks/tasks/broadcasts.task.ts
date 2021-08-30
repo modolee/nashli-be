@@ -26,9 +26,12 @@ export class BroadcastsTask {
     try {
       this.logger.log(`[${getNow()}] **START** - 개별 방송 데이터를 가져와서 저장`);
 
-      const broadcastsData = await Promise.all(
-        timeline.broadcasts.map(({ broadcastId }) => this.broadcastRepository.getBroadcast(broadcastId)),
-      );
+      const broadcastsData = [];
+
+      for (const { broadcastId } of timeline.broadcasts) {
+        await sleep(100);
+        broadcastsData.push(await this.broadcastRepository.getBroadcast(broadcastId));
+      }
 
       const broadcastsDetail = {};
       broadcastsData.map(

@@ -217,7 +217,7 @@ export class SimpleTimelinesTask {
    * 방송 전체 타임라임과 각 방송에 대한 정보를 조회하고 저장
    * 매일 한국시간으로 23시 30분 30초에 실행
    */
-  @Cron('30 30 23 * * *', { timeZone: DEFAULT_TIMEZONE })
+  @Cron('50 30 23 * * *', { timeZone: DEFAULT_TIMEZONE })
   async dailyCron() {
     const tomorrow: string = getTomorrowString();
     return this._handleCron(tomorrow);
@@ -227,7 +227,7 @@ export class SimpleTimelinesTask {
    * 방송 전체 타임라임과 각 방송에 대한 정보를 조회하고 저장
    * 매일 한국시간으로 09~21시 25, 55분 30초에 실행
    */
-  @Cron('30 25,55 9-21 * * *', { timeZone: DEFAULT_TIMEZONE })
+  @Cron('50 25,55 9-21 * * *', { timeZone: DEFAULT_TIMEZONE })
   async hourlyCron() {
     const today: string = getTodayString();
     return this._handleCron(today);
