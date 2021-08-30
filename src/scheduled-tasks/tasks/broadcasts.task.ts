@@ -29,7 +29,7 @@ export class BroadcastsTask {
       const broadcastsData = [];
 
       for (const { broadcastId } of timeline.broadcasts) {
-        await sleep(100);
+        await sleep(50);
         broadcastsData.push(await this.broadcastRepository.getBroadcast(broadcastId));
       }
 
