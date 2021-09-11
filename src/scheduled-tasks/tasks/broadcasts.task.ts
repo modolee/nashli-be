@@ -4,7 +4,6 @@ import { TimelinesService } from '@timelines/services/timelines.service';
 import { DEFAULT_TIMEZONE, getTodayString, getTomorrowString, getNow, sleep } from '@common/helpers/time.helper';
 import { Timeline } from '@timelines/schemas/timeline.schema';
 import { BroadcastRepository } from '@broadcasts/repositories/broadcast.repository';
-import { Broadcast } from '@broadcasts/schemas/broadcast.schema';
 import { BroadcastsService } from '@broadcasts/services/broadcasts.service';
 import { sendTelegramMessage } from '@common/helpers/telegram.helper';
 
@@ -29,7 +28,6 @@ export class BroadcastsTask {
       const broadcastsData = [];
 
       for (const { broadcastId } of timeline.broadcasts) {
-        await sleep(50);
         broadcastsData.push(await this.broadcastRepository.getBroadcast(broadcastId));
       }
 
