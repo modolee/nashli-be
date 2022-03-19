@@ -1,639 +1,789 @@
 {
-  "list":[
-    {
-      "broadcastId":63058,
-      "streamSeq":7723000,
-      "memberId":null,
-      "channelNo":100627914,
-      "bridgeId":7246,
-      "urlId":"신세계티비쇼핑",
-      "nickname":"신세계티비쇼핑",
-      "serviceId":"STOREFARM",
-      "serviceName":"스토어팜",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAxMjlfMzAg/MDAxNjExOTExNzgxNzA2.9IGJkWEsxN0P6UAh10-CYWLGznY5vUni6cXDfYcI3ogg.zcSDHbcur7w0fOQ4wMeAIrG6_B75jzvssIbRpFoeKygg.JPEG/live_up1.jpg",
-      "profileImage":"http://shop1.phinf.naver.net/20200916_86/1600217383346Ky9u9_JPEG/1353163070311804_403256813.jpg",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAyMDFfMjcg/MDAxNjEyMTM5MTY4MjEy.AD4al9MZEbSDcuO0WKdJmdgOfOR5wzc4m_llyzXCaeUg.e65iYwftpfaKEF9GA8gzPr7FdUN5YSWCXeDPXcO0KSog.JPEG/2_%EB%84%A4%EC%9D%B4%EB%B2%840202_%EC%B6%95%EC%82%B0%ED%95%9C%EC%9A%B0%2C%EC%88%98%EC%9E%85%EC%9C%A1_MW.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAyMDFfMTEx/MDAxNjEyMTM5MTcyMTk3.1-rjRXuUGw-qCsqBmu5Pnd03l-1S-rBzTQoJNM_16ucg.Oxto05_87CR-JSrx2jnD2K1kY7_IbZLzfD5-KMQzkCsg.JPEG/3_%EB%84%A4%EC%9D%B4%EB%B2%840202_%EC%B6%95%EC%82%B0%ED%95%9C%EC%9A%B0%2C%EC%88%98%EC%9E%85%EC%9C%A1_PC.jpg",
-      "broadcastTitle":"설특집🥩훈남 정육 식당 오픈🥩LA갈비,한우",
-      "broadcastBridgeTitle":"설특집🥩훈남 정육 식당 오픈🥩LA갈비,한우",
-      "vid":"7E39847FC8B4FF7C44D45B948EB16F425953",
-      "startDate":"2021-02-02T09:00:41.799",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T09:00:33.204",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/59307",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/63058",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/63058",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/63058",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":null,
-      "broadcastType":"PLANNING",
-      "showHostName":"쇼핑호스트 '재혁'. '봉근'",
-      "displayProduct":{
-        "key":"5366964028",
-        "productType":"SHOPPING",
-        "productStatus":"SALE",
-        "broadcastProductStatus":"SALE",
-        "represent":false,
-        "name":"N[웰던푸드] 호주산 LA갈비찜갈비 2kg(선택 가능, 1kg X 2팩)",
-        "image":"http://shop1.phinf.naver.net/20201001_147/1601511250531oOL8m_JPEG/10983327_p_20200818175653.jpg",
-        "brandName":null,
-        "mallName":"신세계티비쇼핑",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/5366964028?tr=lim&isDetail=false&channelNo=100627914&trx=63058_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/5366964028?tr=lim&isDetail=true&channelNo=100627914&trx=63058_0",
-        "price":45900,
-        "discountRate":3,
-        "specialPrice":44520,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
-        {
-          "id":5004,
-          "message":"구매자 대상 프로모션 ",
-          "detailMessage":"방송중 구매인증자 대상으로 깍두기 볶음밥 증정 이벤트",
-          "type":"ONAIR"
-        }
-      ]
-    },
-    {
-      "broadcastId":56738,
-      "streamSeq":7724178,
-      "memberId":null,
-      "channelNo":100085460,
-      "bridgeId":5988,
-      "urlId":"에이원베이비스토어",
-      "nickname":"에이원베이비스토어",
-      "serviceId":"KIDS",
-      "serviceName":"키즈윈도",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAxMjBfMjM2/MDAxNjExMTEwNDk3MzUy.E5BHu79iRTO6Il_xlLUTl0qdxcAoUyYsKeTGRUWoBo8g.EOGARQToJFCbyaK6PPyE4GPnnIccWXMlW-jq4Unawqcg.JPEG/live_up1.jpg",
-      "profileImage":"http://shop1.phinf.naver.net/20171103_183/aonebaby_1509691925200OwApa_JPEG/32997889827317740_1523656647.jpg",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAxMjBfMjA0/MDAxNjExMTIwMTczMDgy.7FoyXgO3UY8MBtKtQvmcIkR8CmbPwkTYLAU73McDcXEg.7l34CA9G7ooAqsNcj5n_EYaHCx5tBG5NlhM-O0_rbrcg.JPEG/800696.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAxMjBfMTkz/MDAxNjExMTIwMTc4ODc5.rgE95svOSUPCv7cj1fmL1ML5E1LYwgxF8IB7q4qKsOkg.CouZXG2ybl8fAGU-syYi7mLPWNyHLk1IyKSFYR3_losg.JPEG/1440675.jpg",
-      "broadcastTitle":"[키즈라이브데이] 설 전에 찾아갑니다. joie 카시트",
-      "broadcastBridgeTitle":"똑똑 설 전에 찾아갑니다 joie 카시트",
-      "vid":"6389C177E0C719061C6B9D6A553FBF3DD2BF",
-      "startDate":"2021-02-02T10:00:04.82",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T10:00:07.047",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/10685",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/56738",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/56738",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/56738",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":null,
-      "broadcastType":"PLANNING",
-      "showHostName":"",
-      "displayProduct":{
-        "key":"4658630774",
-        "productType":"SHOPPING",
-        "productStatus":"SALE",
+  "currentData":{
+     "broadcast":{
+        "id":446148,
+        "title":"\uD83D\uDD25다이어트 신상 필수템\uD83D\uDD25 락토페린 다이어트 LIVE",
+        "status":"BLOCK",
+        "displayType":"OPEN",
+        "broadcastType":"NONE",
+        "streamSeq":15532970,
+        "vid":"762C658E8E450A38EFC001D2991DD77D6E08",
+        "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTFfNTMg/MDAxNjQ2OTc5OTIzOTQ1.YG1FwddFvG5sMp1qL7AA-t16F2cHbEXSyZqQ2L5ZzIog.Lm0Bqg4BLx2u7uSnbvsKLAbo2wWMFwcOQcJdqPFe0Nog.JPEG/image.jpg",
+        "startDate":"2022-03-19T09:00:01",
+        "expectedStartDate":"2022-03-19T09:00:27.482",
+        "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/446148",
+        "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/446148",
+        "showHostName":null
+     },
+     "broadcastOwner":{
+        "id":60583,
+        "broadcasterId":"100804639",
+        "nickname":"휴온스 공식스토어",
+        "exposureText":null,
+        "serviceId":"STOREFARM",
+        "serviceName":"스토어팜",
+        "profileUrl":"http://shop1.phinf.naver.net/20210923_155/16323578846395RCKB_PNG/33493664362078695_1623681902.png",
+        "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/60583"
+     },
+     "broadcastBridge":{
+        "id":94131,
+        "title":"\uD83D\uDD25다이어트 신상 필수템\uD83D\uDD25 락토페린 다이어트 LIVE",
+        "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTdfNDYg/MDAxNjQ3NDkzNzY1NjU0.0ARvm8WGo3Yc47B6hX7IVhzgcGOw79JPVD_Gu7UnR7Yg.jbdVrFXT_lEEpDDlqG2bJZIBIs-ht7eez9VMarzWh2Ag.JPEG/image.jpg",
+        "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTdfMTM2/MDAxNjQ3NDkzNzcxMjIw.QE5CJykkeazcfiLiquuzAAWxXSY1EH6g9OI-mD6o6bIg.7g05xWNp9vg83BUKtxu9Tb_NQWo0io27ttqcBsO4QXcg.JPEG/image.jpg",
+        "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/446148"
+     },
+     "displayProduct":{
+        "key":"6038392596",
+        "type":"SHOPPING",
+        "status":"SALE",
         "broadcastProductStatus":"SALE",
         "represent":true,
-        "name":"조이 아이스핀 아이사이즈 회전형 신생아 카시트 (캐노피,쿨시트 증정)_2월26일 순차발송",
-        "image":"http://shop1.phinf.naver.net/20200713_91/1594615318195OI7Rp_JPEG/31977651786197456_1708529308.jpg",
-        "brandName":"조이",
-        "mallName":"에이원베이비스토어",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/4658630774?tr=lim&isDetail=false&channelNo=100085460&trx=56738_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/4658630774?tr=lim&isDetail=true&channelNo=100085460&trx=56738_0",
-        "price":539000,
-        "discountRate":32,
-        "specialPrice":537000,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
+        "name":"휴온스 살사라진 락토페린 다이어트 체지방감소 장용성 초유 단백질 2주분, 14정 1박스",
+        "image":"https://shop-phinf.pstatic.net/20211203_161/16385227022016yDDe_JPEG/39658485911415449_430341968.jpg",
+        "brandName":"휴온스",
+        "mallName":"휴온스 공식스토어",
+        "link":"https://shoppinglive.naver.com/bridge/live/product/6038392596?tr=lim5&isDetail=false&channelNo=100804639&trx=446148_0&wholeCategoryId=50000006%3E50000023%3E50001092%3E50002615&ntSource=nshoplive&ntMedium=446148&ntDetail=replay&ntKeyword=nshoplive",
+        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/6038392596?tr=lim5&isDetail=true&channelNo=100804639&trx=446148_0&wholeCategoryId=50000006%3E50000023%3E50001092%3E50002615&ntSource=nshoplive&ntMedium=446148&ntDetail=replay&ntKeyword=nshoplive",
+        "price":53900,
+        "discountRate":36,
+        "rangePrice":false,
+        "isNpaySaving":true
+     },
+     "broadcastBanner":null,
+     "benefits":[
         {
-          "id":3793,
-          "message":"방송 중 구매 인증 이벤트!",
-          "detailMessage":"구매 인증 3명 추첨, 조이 팩트 플렉스 LFC 휴대용 유모차 증정! (소비자가 380,000원 상당)",
-          "type":"ONAIR"
+           "id":297429,
+           "message":"무조건 증정되는 사은품 혜택!",
+           "detailMessage":"살사라진 락토페린 다이어트 6주분(3박스) 구매하시면 트리플 포스트바이오틱스를 추가로 증정합니다 !",
+           "type":"ONAIR",
+           "broadcastId":446148
+        },
+        {
+           "id":297430,
+           "message":"구매인증하면 구매한 만큼 더블혜택!",
+           "detailMessage":"라이브 중에 구매하시고 채팅창을 통해 주문번호 인증을 해주시면 10분 선정하여 구매한 만큼 추가로 더 보내드립니다!",
+           "type":"ONAIR",
+           "broadcastId":446148
+        },
+        {
+           "id":297431,
+           "message":"리뷰쓰면 네이버포인트 2만원 지급!",
+           "detailMessage":"리뷰 작성 시 라이브 시청 인증해주시면 10분을 선정하여 네이버포인트 2만원을 지급합니다!",
+           "type":"ONAIR",
+           "broadcastId":446148
         }
-      ]
-    },
-    {
-      "broadcastId":63852,
-      "streamSeq":7724960,
-      "memberId":null,
-      "channelNo":100522461,
-      "bridgeId":7266,
-      "urlId":"크록스",
-      "nickname":"크록스",
-      "serviceId":"OUTLET",
-      "serviceName":"아울렛윈도",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAyMDFfMzYg/MDAxNjEyMTQ3NDE0MTE3.Pi0G8bsplVF4DaNN_h43-U_V_SkaiJ6zLzvPv67eP0og.QRjrChaAx8UhC68qb3_eHVW9dG9_KP4EyjQHKbVToOYg.PNG/1612147391809.png",
-      "profileImage":"https://g-selected.pstatic.net/MjAyMDA0MTNfMTAx/MDAxNTg2Nzc5OTAzNDMy.NQP09YMtUCFVd9uyLaTblNL2a-CJI01-hSVrBEc0am4g.8qIzaETBW8eBTq7paUnYIPinUvkEWrs556mukiN4EVIg.PNG/prmtImg.png?type=f180_180_q90",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAyMDFfMTUx/MDAxNjEyMTQ5NTQ1NTEx.xaDLtkRtTiJx5aYqRdUMrAgdJUfvcdDWYBIkcIitotIg.wIylDc5d9ekddYRwT0SkOGz12A4IIs5vgf--Q7EHacsg.JPEG/IMG_01022021_121823_%28800_x_696_%ED%94%BD%EC%85%80%29.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAyMDFfMTcy/MDAxNjEyMTQ5NTUwMDMy.jCeDAggpOgfopD3N9JB8DqliXsU4CHpTci_rtLbcn2Qg.g6O03KNatzCog7aQKXAvdYa6az6oeTmvxp2focRCm_Eg.JPEG/IMG_01022021_121836_%281440_x_675_%ED%94%BD%EC%85%80%29.jpg",
-      "broadcastTitle":"패밀리슈즈 크록스! 특별구성, 특별혜택🎁",
-      "broadcastBridgeTitle":"크록스 설맞이 특별구성&혜택!  2/2 오전10시30분",
-      "vid":"50AE923BF7317C39E5FF0CE557D95B6D7D1E",
-      "startDate":"2021-02-02T10:30:20.079",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T10:30:22.196",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/55002",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/63852",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/63852",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/63852",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":"롯데 아울렛 고양터미널점",
-      "broadcastType":"NONE",
-      "showHostName":null,
-      "displayProduct":{
-        "key":"5370940238",
-        "productType":"SHOPPING",
-        "productStatus":"OUTOFSTOCK",
-        "broadcastProductStatus":"CLOSE",
-        "represent":false,
-        "name":"(크록스) 바야 밴드 Bayaband SET(아동화+아동화)",
-        "image":"http://shop1.phinf.naver.net/20210201_91/1612148980567vc0Ui_JPEG/13284814316394362_1112317059.JPG",
-        "brandName":"크록스",
-        "mallName":"크록스",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/5370940238?tr=lim&isDetail=false&channelNo=100522461&trx=63852_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/5370940238?tr=lim&isDetail=true&channelNo=100522461&trx=63852_0",
-        "price":34900,
-        "discountRate":22,
-        "specialPrice":0,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
-
-      ]
-    },
-    {
-      "broadcastId":57039,
-      "streamSeq":7725491,
-      "memberId":null,
-      "channelNo":100684459,
-      "bridgeId":6056,
-      "urlId":"빈폴키즈",
-      "nickname":"빈폴키즈",
-      "serviceId":"KIDS",
-      "serviceName":"키즈윈도",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAxMjdfMTE4/MDAxNjExNzEwODkwOTg1.CfGWX2g49qLprvRPj-MOcUQrcMQB46ohpnvsFWOYbbog.tG4vvl0jSbMBDQzN58x6TU3r-6eMLZudQOmc1ZVFXe0g.JPEG/live_up1.jpg",
-      "profileImage":"http://shop1.phinf.naver.net/20200313_152/15840624581062s9n4_JPEG/21424791676289146_1998041443.jpg",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAxMjFfMTI0/MDAxNjExMjAyNjQ1NTM2.w2zsL6ZIheFj7ARyYBzGFvbv_a2V7S2el6OjGEwVGHUg.zqy9NND8G2eqZNdOHT9VodZQjYQaB-xmiBaTk0LC1-Ag.JPEG/%EB%AA%A8%EB%B0%94%EC%9D%BC.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAxMjBfNjcg/MDAxNjExMTMzMzIzMTU3.KMMS0ZssNvzJN8thSOZYqvwaVquS8kWc0xeLyUPkp0Eg.4Q-8wZYAQ2SOR3fFLx4dTEhpAtpeSvjKTrzMEOCqUPIg.JPEG/%EC%83%81%EB%8B%A8_%EC%9D%B4%EB%AF%B8%EC%A7%80_%28PC%29_%EC%82%AC%EC%9D%B4%EC%A6%88.jpg",
-      "broadcastTitle":"[키즈라이브데이]새학기준비! 책가방&실내화 최대 75%",
-      "broadcastBridgeTitle":"신학기준비 끝! 신상책가방SET&실내화 최대 75%할인",
-      "vid":"D4F3E6A25512CF40BDBC7D3097E5FCEE7F02",
-      "startDate":"2021-02-02T11:00:03.996",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T11:00:54.302",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/58751",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/57039",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/57039",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/57039",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":null,
-      "broadcastType":"PLANNING",
-      "showHostName":"",
-      "displayProduct":{
-        "key":"5359249969",
-        "productType":"SHOPPING",
-        "productStatus":"SALE",
-        "broadcastProductStatus":"SALE",
-        "represent":true,
-        "name":"[LIVE] 코어 솔리드 책가방 SET(4종 택1)",
-        "image":"http://shop1.phinf.naver.net/20210127_65/1611720969429bYixN_JPEG/12856804245499868_494360150.jpg",
-        "brandName":"BEANPOLE KIDS",
-        "mallName":"빈폴키즈",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/5359249969?tr=lim&isDetail=false&channelNo=100684459&trx=57039_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/5359249969?tr=lim&isDetail=true&channelNo=100684459&trx=57039_0",
-        "price":80640,
-        "discountRate":37,
-        "specialPrice":75640,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
+     ]
+  },
+  "prevData":{
+     "list":null,
+     "prev":null,
+     "next":null
+  },
+  "nextData":{
+     "list":[
         {
-          "id":4327,
-          "message":"실내화 9,900원 ",
-          "detailMessage":"300매 한정판매",
-          "type":"ONAIR"
+           "broadcast":{
+              "id":443860,
+              "title":"최대 43%+사은품! 지노마스터X NEW에버콜라겐",
+              "status":"BLOCK",
+              "displayType":"OPEN",
+              "broadcastType":"NONE",
+              "streamSeq":15533994,
+              "vid":"13B2E305A6A33E0735D74942ABB4CE7E0336",
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMDhfMTI1/MDAxNjQ2NzI1MTQwNzgw.swzxK8s1ZqEW_FcYHUrWerdrRaOBhGxxSanQrAcPopAg.Pr7ocnG8qjjA-oU6uIVwui8FpGW9BpW-B5_8W54WO9Ag.JPEG/image.jpg",
+              "startDate":"2022-03-19T10:00:00",
+              "expectedStartDate":"2022-03-19T10:00:13.682",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/443860",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/443860",
+              "showHostName":null
+           },
+           "broadcastOwner":{
+              "id":13,
+              "broadcasterId":"500272158",
+              "nickname":"뉴트리",
+              "exposureText":null,
+              "serviceId":"STOREFARM",
+              "serviceName":"스토어팜",
+              "profileUrl":"http://shop1.phinf.naver.net/20200226_94/15827081868715X6Ey_PNG/20068021418726833_920480787.png",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/13"
+           },
+           "broadcastBridge":{
+              "id":91920,
+              "title":"최대 43%! 지노마스터X NEW에버콜라겐",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMDhfMTYx/MDAxNjQ2NzI1NDk1MzAx.G59rcoVpNBxdtBkRedwFl-XIEiVXtuJEJXKW4KTJJrMg.o_lFYpPNNCjrjlaJYVQdgszmAqt6K-0LPBUFCAvSVwcg.JPEG/image.jpg",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMDhfMTg4/MDAxNjQ2NzI1NTAzOTY0.aAyUFiHTdOwx91fVxluGWEop2Z07zRjchEy8-AKV0wMg.vdwIu_pcHbHCBB_9JlWeGQHrjKofgVbS8AqW_H8-Cmcg.JPEG/image.jpg",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/443860"
+           },
+           "displayProduct":{
+              "key":"6304953416",
+              "type":"SHOPPING",
+              "status":"SALE",
+              "broadcastProductStatus":"SALE",
+              "represent":false,
+              "name":"에버콜라겐 인앤업비오틴 업 30주분 먹는 저분자 피쉬 콜라겐 펩타이드 기능성 김사랑 뉴트리",
+              "image":"https://shop-phinf.pstatic.net/20220215_278/1644902756164jNc6P_JPEG/46038590991117678_756136038.jpg",
+              "brandName":"에버콜라겐",
+              "mallName":"뉴트리",
+              "link":"https://shoppinglive.naver.com/bridge/live/product/6304953416?tr=lim5&isDetail=false&channelNo=500272158&trx=443860_0&wholeCategoryId=50000006%3E50000024%3E50007037&ntSource=nshoplive&ntMedium=443860&ntDetail=replay&ntKeyword=nshoplive",
+              "detailLink":"https://shoppinglive.naver.com/bridge/live/product/6304953416?tr=lim5&isDetail=true&channelNo=500272158&trx=443860_0&wholeCategoryId=50000006%3E50000024%3E50007037&ntSource=nshoplive&ntMedium=443860&ntDetail=replay&ntKeyword=nshoplive",
+              "price":250500,
+              "discountRate":26,
+              "rangePrice":false,
+              "isNpaySaving":true
+           },
+           "broadcastBanner":null,
+           "benefits":[
+              {
+                 "id":295436,
+                 "message":"라이브 사은품",
+                 "detailMessage":"지노마스터 150일 + 지노마스터 착 15일분\n지노마스터 착 160일분+지노마스터 착 15일분\n\n인앤업비오틴 업 18주 + 타임 10포\n인앤업비오틴 업 30주분+ 타임 20포\n타임비오틴 업 120일분 + 타임 10포\n타임비오틴 업  210일분 + 타임 20포",
+                 "type":"ONAIR",
+                 "broadcastId":443860
+              },
+              {
+                 "id":295437,
+                 "message":"구매인증 이벤트 (추첨 20명)",
+                 "detailMessage":"- 라이브 중 구매 인증 시, 20명 추첨 구매 수량만큼 더블 증정\n* 더블증정은 당첨된 주문번호 상품 기준입니다.\n* 선착순 상품은 더블증정 제외입니다.\n* 당첨자 발표는 3월 21일 오후 5시 뉴트리스토어 공지사항 참고\n* 사은품은 구매확정 후, 일괄 발송",
+                 "type":"ONAIR",
+                 "broadcastId":443860
+              },
+              {
+                 "id":295438,
+                 "message":"소통왕 이벤트 (총 4명)",
+                 "detailMessage":"- 라이브 중 댓글 활동 및 유익한 질문을 한 2명 골라서 증정 (첫번째 지노착 40일, 두번째 CTP 앰플)\n* 당첨자 발표는 3월 21일 오후 5시 뉴트리스토어 공지사항 참고 (방송 중 발표하지만 한 번더 공지)\n* 뉴트리스토어에서 본품을 구매할 수 있는 쿠폰으로 발급 예정",
+                 "type":"ONAIR",
+                 "broadcastId":443860
+              },
+              {
+                 "id":295439,
+                 "message":"선착순 이벤트(합배송비 무료배송)",
+                 "detailMessage":"- 10-11시: 지노마스터 착 15일분 9900원 50명 선착순 이벤트\n- 11-12시: 인앤업플러스 15일분 9900원 50명 선착순 이벤트",
+                 "type":"ONAIR",
+                 "broadcastId":443860
+              }
+           ]
         },
         {
-          "id":4328,
-          "message":"책가방 세트 구매시",
-          "detailMessage":"선물용 쇼핑백 증정",
-          "type":"ONAIR"
+           "broadcast":{
+              "id":449776,
+              "title":"[잇수다] 신상 입어보기 ❤ 캡모자 증정 event ❤",
+              "status":"BLOCK",
+              "displayType":"OPEN",
+              "broadcastType":"NONE",
+              "streamSeq":15535548,
+              "vid":"308CB146EB232544007704CC676647DAE467",
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTRfNiAg/MDAxNjQ3MjQxOTAzODc2.6RNaqnHsqvagU73bJuQcN39x8oQVA_4DNmDTgmpCf0Ig.rnVtHGTuUg036B0GXRhL3nS3ZSLlmbLU0BKcQX053Msg.JPEG/image.jpg",
+              "startDate":"2022-03-19T11:00:44",
+              "expectedStartDate":"2022-03-19T11:00:07.333",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/449776",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/449776",
+              "showHostName":null
+           },
+           "broadcastOwner":{
+              "id":30626,
+              "broadcasterId":"1000020042",
+              "nickname":"잇수다",
+              "exposureText":null,
+              "serviceId":"STYLE_STYLE",
+              "serviceName":"스타일윈도 로드샵",
+              "profileUrl":"http://shop1.phinf.naver.net/20181229_80/itsooda_1546077026092IyhXT_JPEG/28795884938342497_628590571.jpg",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/30626"
+           },
+           "broadcastBridge":{
+              "id":93185,
+              "title":"[잇수다] 신상 입어보기 ❤ 캡모자 증정 event ❤",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTRfMjkz/MDAxNjQ3MjQzMDMwMTU2.2h45McQWGfepeQWm6gpkbKX18t-JTzPBSkIVFy5Lc_Ag.93qGsgDH1CmRHMyHMePwXpKBXpNf74PWSsvrBjxBVyQg.JPEG/image.jpg",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTRfMTE1/MDAxNjQ3MjQzMDMzNTMy.MjMVVrYqOi9LcF5UuG7litqSGW3wGrHNDqIRYpVOwMog.5bYhcKkadv2K_erpLMB_BlZdK01ddxXUmBUIajX_myEg.JPEG/image.jpg",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/449776"
+           },
+           "displayProduct":{
+              "key":"6411075904",
+              "type":"SHOPPING",
+              "status":"SALE",
+              "broadcastProductStatus":"SALE",
+              "represent":true,
+              "name":"[라이브특가] 바닐라 타스란 배색 바람막이 반바지 트레이닝 세트",
+              "image":"https://shop-phinf.pstatic.net/20220314_168/1647244646030or4Gd_JPEG/48380491721699157_1100887926.jpg",
+              "brandName":"잇수다",
+              "mallName":"잇수다",
+              "link":"https://shoppinglive.naver.com/bridge/live/product/6411075904?tr=lim5&isDetail=false&channelNo=1000020042&trx=449776_0&wholeCategoryId=50000000%3E50000167%3E50000818&ntSource=nshoplive&ntMedium=449776&ntDetail=replay&ntKeyword=nshoplive",
+              "detailLink":"https://shoppinglive.naver.com/bridge/live/product/6411075904?tr=lim5&isDetail=true&channelNo=1000020042&trx=449776_0&wholeCategoryId=50000000%3E50000167%3E50000818&ntSource=nshoplive&ntMedium=449776&ntDetail=replay&ntKeyword=nshoplive",
+              "price":35010,
+              "discountRate":29,
+              "rangePrice":false,
+              "isNpaySaving":true
+           },
+           "broadcastBanner":null,
+           "benefits":[
+              {
+                 "id":300614,
+                 "message":"★구매인증 추첨3명 캡모자 사은품★",
+                 "detailMessage":"라이브 방송 중 구매해주신 고객님은\t\t\t\t\t\n댓글에 꼭 \"구매 인증\" 남겨주세요~\t\t\t\t\t\n댓글 작성시 자동으로 참여되며, 방송종료 전 추첨을 통해\t\t\t\t\t\n총 3분께 '12brix 캡모자'를 선물로 드립니다!\t\t\t\t\t\n",
+                 "type":"ONAIR",
+                 "broadcastId":449776
+              },
+              {
+                 "id":300615,
+                 "message":"★소통왕 3명 10% 할인쿠폰★\t\t\t",
+                 "detailMessage":"라이브 방송 중 소통을 제일 잘해주신 고객님 3분을 선정하여\t\t\t\t\t\n10%할인쿠폰을 쏩니다!\t\t\t\t\t\n",
+                 "type":"ONAIR",
+                 "broadcastId":449776
+              }
+           ]
         },
         {
-          "id":4329,
-          "message":"라이브 구매 선착순 100명",
-          "detailMessage":"빈폴키즈 깜찍 핸드폰 가방 증정",
-          "type":"ONAIR"
+           "broadcast":{
+              "id":442524,
+              "title":"심콩핫딜! 휴애니스 벤토나이트&동원 뉴트리플랜 특가할인",
+              "status":"BLOCK",
+              "displayType":"OPEN",
+              "broadcastType":"NONE",
+              "streamSeq":15535547,
+              "vid":"FCCD605792E3DAD1F3DB1AE7E032920D28AE",
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTZfMjYw/MDAxNjQ3NDAyNTk5MzUy.yYi4ZaIeUGoe9dfwmYjUGaid9LzmOSiosyt2vX0hRLAg.WTY6JR-wUTOsM4BMIL1rQBCtXdg7HxBhNtSKayHRDfcg.PNG/image.png",
+              "startDate":"2022-03-19T11:00:43",
+              "expectedStartDate":"2022-03-19T11:00:09.869",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/442524",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/442524",
+              "showHostName":null
+           },
+           "broadcastOwner":{
+              "id":24072,
+              "broadcasterId":"500149234",
+              "nickname":"심콩캣",
+              "exposureText":null,
+              "serviceId":"STOREFARM",
+              "serviceName":"스토어팜",
+              "profileUrl":"http://shop1.phinf.naver.net/20210730_268/1627642003419HzMaH_JPEG/28777831244950171_1029180917.jpg",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/24072"
+           },
+           "broadcastBridge":{
+              "id":91590,
+              "title":"봄맞이 특가할인! 휴애니스 모래& 뉴트리플랜 고양이간식",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTZfODEg/MDAxNjQ3NDAxMjg5NTYw.Kuqy78LF7ro058Tas_9jLluYjl6z5Nt62-nts9aiXpkg.UDgSrMAeh0g-KniibnKtfZ3VU-fojpobFMj6rNS0txsg.PNG/image.png",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTZfMTYw/MDAxNjQ3NDAxNzE1MDk2.CeH0gR1KAVisbMNDVfxog5X5eJ1E8Oge1BeavAXNkbIg.ioqj8jVSLTlf7N5-ENk79d1sSXax9a3o1sqaPjWNiRwg.PNG/image.png",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/442524"
+           },
+           "displayProduct":{
+              "key":"5982343387",
+              "type":"SHOPPING",
+              "status":"SALE",
+              "broadcastProductStatus":"SALE",
+              "represent":true,
+              "name":"휴애니스 먼지없는 벤토나이트 고양이 모래 6kg x2개",
+              "image":"https://shop-phinf.pstatic.net/20211115_100/16369757531116jof5_PNG/38111651814320804_368669977.png",
+              "brandName":"휴애니스",
+              "mallName":"심콩캣",
+              "link":"https://shoppinglive.naver.com/bridge/live/product/5982343387?tr=lim5&isDetail=false&channelNo=500149234&trx=442524_0&wholeCategoryId=50000008%3E50000155%3E50006694%3E50006695&ntSource=nshoplive&ntMedium=442524&ntDetail=replay&ntKeyword=nshoplive",
+              "detailLink":"https://shoppinglive.naver.com/bridge/live/product/5982343387?tr=lim5&isDetail=true&channelNo=500149234&trx=442524_0&wholeCategoryId=50000008%3E50000155%3E50006694%3E50006695&ntSource=nshoplive&ntMedium=442524&ntDetail=replay&ntKeyword=nshoplive",
+              "price":29800,
+              "discountRate":0,
+              "rangePrice":false,
+              "isNpaySaving":true
+           },
+           "broadcastBanner":null,
+           "benefits":[
+              {
+                 "id":294213,
+                 "message":"오직 방송중 딱1시간만 60%할인!",
+                 "detailMessage":"수분함량 9%의 비밀! 프리미엄 벤토나이트 모래 휴애니스!\n100%휴먼그레이드! 집사도 먹을 수 있는 동원의 고양이 간식,\n동원 뉴트리플랜! 역대급 특가! 오직 방송중 딱1시간만!\n최대 67% 할인!",
+                 "type":"ONAIR",
+                 "broadcastId":442524
+              },
+              {
+                 "id":294214,
+                 "message":"심콩캣 라이브 홍보하고! 사은품 받자",
+                 "detailMessage":"라이브진행 전까지 SNS(블로그,인스타그램,페이스북등)와 카페와 커뮤니티등에 심콩한 라이브쇼핑 방송 예고를 홍보해 주세요! 홍보글을 톡톡을 통해 인증해 주시면 추첨을 통해 총 20분께 5만원 상당의 사은품(휴애니스,동원 뉴트리플랜)을 드려요! ",
+                 "type":"ONAIR",
+                 "broadcastId":442524
+              },
+              {
+                 "id":294215,
+                 "message":"선착순 구매인증 이벤트!",
+                 "detailMessage":"라이브쇼핑 방송중 구매를 하셨다면 주문번호만 채팅창에 인증해 주세요! 선착순 10분께 2만원 상당의 사은품(휴애니스,동원 뉴트리플랜)을 선물 드려요!",
+                 "type":"ONAIR",
+                 "broadcastId":442524
+              },
+              {
+                 "id":294216,
+                 "message":"큰손 집사 이벤트! (10만원이상)",
+                 "detailMessage":"라이브쇼핑 방송중 구매금액이 10만원 이상인 고객 모두에게 \n3만원 상당의 사은품(휴애니스,동원 뉴트리플랜)을 증정 드려요!",
+                 "type":"ONAIR",
+                 "broadcastId":442524
+              },
+              {
+                 "id":294217,
+                 "message":"스토어찜&소식알림 고객 할인쿠폰 증정",
+                 "detailMessage":"심콩캣 라이브쇼핑 방송을 스토어찜과 소식알림을 해주세요.\n새로운 심콩 핫딜 소식은 물론, 더욱 할인된 금액으로 특가 혜택을 받을 수 있어요!",
+                 "type":"ONAIR",
+                 "broadcastId":442524
+              }
+           ]
+        },
+        {
+           "broadcast":{
+              "id":447165,
+              "title":"[삼성메가위크] 더프리스타일 쇼핑은 다영이만 따라오숏",
+              "status":"BLOCK",
+              "displayType":"OPEN",
+              "broadcastType":"PLANNING",
+              "streamSeq":15531295,
+              "vid":"C74D0AF52ADE72E90B8F778969D2D3F6C2FF",
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTFfMjY2/MDAxNjQ2OTc1OTcyNjY4.YU_Z0K5iAwboPq6jZ0HrbsIvzoO3L5rkyXeQ6X4W5i4g.4AoBr5JnZv0U-5kXaAoLnlKooHbT5it5HuwX_YdlXkUg.PNG/live_up1.png",
+              "startDate":"2022-03-19T11:00:25",
+              "expectedStartDate":"2022-03-19T11:00:09.561",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/447165",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/447165",
+              "showHostName":"우주소녀 다영"
+           },
+           "broadcastOwner":{
+              "id":86799,
+              "broadcasterId":"53676473",
+              "nickname":"다영이만 따라오숏",
+              "exposureText":null,
+              "serviceId":"SELECTIVE",
+              "serviceName":"셀렉티브",
+              "profileUrl":"https://g-selected.pstatic.net/MjAyMjAzMDhfMTAx/MDAxNjQ2NzMxNTU5MTk1.Ad0ifm--QEvRWo9ygwYN7jlkzBhc_JcAgJu70d8jS_og.2RGBIbGvR9dJPPVIbP4wnrfphxubsYL1N4d91s3agggg.JPEG/image.jpg",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/86799"
+           },
+           "broadcastBridge":{
+              "id":92635,
+              "title":"삼성 메가위크 더프리스타일 쇼핑은 다영이만 따라오숏",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTFfMjMw/MDAxNjQ2OTc2NTAxOTQ3.piAhY0rUfhXR8RJqfx6u56XDoMYYbhcOD9Mvz9IV9vog.7U7Z310Voc9XxiRn_ouq0j0PXGrECBJqkPcFKtrfXWIg.PNG/image.png",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTFfNTEg/MDAxNjQ2OTc2NTEzMDMx.CxcrR0NrqBIa9h7OzXIdHlZ-47AuFA62UnDoJZkcRZQg.Dd2OKm5axNZdK73ltyo_l8Oo5CPjv5Z-kZe6MJqyIisg.PNG/image.png",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/447165"
+           },
+           "displayProduct":null,
+           "broadcastBanner":{
+              "broadcastId":447165,
+              "image":"https://g-selected.pstatic.net/MjAyMjAzMTFfMTc0/MDAxNjQ2OTg4NTQ0OTg5.4pXTbosnKEQ8VBn6lPJ3xmpa0iR8D6ZmpYEjSe6Bx54g.rAjNnz0xamIFdkHh0qBWCUvtDvAQd24-5IHw5gWzgNYg.PNG/live_up1.png",
+              "title":"삼성메가위크 더프리스타일",
+              "subTitle":"3/19 오후 7시 LIVE",
+              "link":"https://shoppinglive.naver.com/bridge/live/banner/934?broadcastId=447165&link=https%3A%2F%2Fshoppinglive.naver.com%2Flivebridge%2F443513"
+           },
+           "benefits":[
+              
+           ]
+        },
+        {
+           "broadcast":{
+              "id":451763,
+              "title":"블루밍에이치의 쇼핑라이브",
+              "status":"BLOCK",
+              "displayType":"OPEN",
+              "broadcastType":"NONE",
+              "streamSeq":15535502,
+              "vid":"64C2D3B280C1F9EF69B6231E17F531B10E29",
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTVfMTEx/MDAxNjQ3MzQ3MDgyMzYz.jyCFy1HpW2Z3Y3dorYc36GhxzqWCzKmCV81p8Hy2FBMg.gvyYydiaJ8rdiMZ2r5j6XaKQJ9YsOLYuquKcrGc1op4g.JPEG/D65750CB-D232-478E-BCFE-F4F3C3288990.jpg",
+              "startDate":"2022-03-19T10:59:51",
+              "expectedStartDate":"2022-03-19T11:00:41.052",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/451763",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/451763",
+              "showHostName":null
+           },
+           "broadcastOwner":{
+              "id":34289,
+              "broadcasterId":"100451235",
+              "nickname":"블루밍에이치",
+              "exposureText":null,
+              "serviceId":"STYLE_STYLE",
+              "serviceName":"스타일윈도 로드샵",
+              "profileUrl":"http://shop1.phinf.naver.net/20190513_249/l_o_v_e_h_1557732433918ywKys_JPEG/81038734546440173_1898382746.jpg",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/34289"
+           },
+           "broadcastBridge":{
+              "id":93675,
+              "title":"블루밍에이치 봄 신상 입어보기 ♥",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTVfMjA4/MDAxNjQ3MzQ3NTA1NTYw.A_T3XfZa7fRYQ7sBfv92lrnDNy0kFau5U0cV2cpoiBkg.ZcYc0Zag9orz7WsMbYMWjR61bAPNhmErsSdz58ktUkEg.JPEG/image.jpg",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTVfMTIy/MDAxNjQ3MzQ3NjEyNjIx.vocoAqjsjxr1g5y9q_gjExuQUH0PRGFbaW7xe5CprQwg.RaiCFwO1mve04LGT9YDpLE5XEyu9hdfxaxr6A02Ond0g.JPEG/image.jpg",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/451763"
+           },
+           "displayProduct":{
+              "key":"6365133065",
+              "type":"SHOPPING",
+              "status":"SALE",
+              "broadcastProductStatus":"SALE",
+              "represent":false,
+              "name":"[무배] 포즈 루즈핏 스트라이프 카라 여성 봄니트 4color",
+              "image":"https://shop-phinf.pstatic.net/20220303_20/1646236312196r5l7h_JPEG/47372091823294223_217747250.jpg",
+              "brandName":"블루밍에이치",
+              "mallName":"블루밍에이치",
+              "link":"https://shoppinglive.naver.com/bridge/live/product/6365133065?tr=lim5&isDetail=false&channelNo=100451235&trx=451763_0&wholeCategoryId=50000000%3E50000167%3E50000804&ntSource=nshoplive&ntMedium=451763&ntDetail=replay&ntKeyword=nshoplive",
+              "detailLink":"https://shoppinglive.naver.com/bridge/live/product/6365133065?tr=lim5&isDetail=true&channelNo=100451235&trx=451763_0&wholeCategoryId=50000000%3E50000167%3E50000804&ntSource=nshoplive&ntMedium=451763&ntDetail=replay&ntKeyword=nshoplive",
+              "price":28900,
+              "discountRate":42,
+              "rangePrice":false,
+              "isNpaySaving":true
+           },
+           "broadcastBanner":null,
+           "benefits":[
+              
+           ]
+        },
+        {
+           "broadcast":{
+              "id":449707,
+              "title":"[신상 입어보기] 봄 주얼리 10% + 사은품증정",
+              "status":"BLOCK",
+              "displayType":"OPEN",
+              "broadcastType":"NONE",
+              "streamSeq":15536901,
+              "vid":"EA7FD2158301B8EB428FC3B95E1288096677",
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTRfMTM2/MDAxNjQ3MjQwMDgxNDAz.IBGrXGUnn1aLPZAaQmXmfuMrJFH9wtUxWsuYVRzaqaUg.4bIqYdLW3MoxfaGfeBvOfd7oRI8loMyMa7LWP404Qv8g.JPEG/image.jpg",
+              "startDate":"2022-03-19T11:58:57",
+              "expectedStartDate":"2022-03-19T12:00:18.765",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/449707",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/449707",
+              "showHostName":null
+           },
+           "broadcastOwner":{
+              "id":620,
+              "broadcasterId":"100058738",
+              "nickname":"모던라이크",
+              "exposureText":null,
+              "serviceId":"STYLE_STYLE",
+              "serviceName":"스타일윈도 로드샵",
+              "profileUrl":"http://shop1.phinf.naver.net/20171115_13/modernlike_1510674270880hysRC_PNG/33980235507228144_-358821925.png",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/620"
+           },
+           "broadcastBridge":{
+              "id":93163,
+              "title":"[신상 입어보기] 봄 주얼리 10% + 사은품증정",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTRfNjAg/MDAxNjQ3MjQwODE4MzMw.hjTs7ZvUlfXoAEx5w9e2UUQAM2JCKzNtAaa89tvb8mgg.kiSQiyh1bsgYuoD5erhsUkKRRyBxJGjw64HOhf9Jc1og.JPEG/image.jpg",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTRfMjkz/MDAxNjQ3MjQwODIxOTk3.OfwNQQ_K1WTy5GWSgsw1E4JlvE0657O_f8StXhbd3OAg.OAhRqY5RtKSwFHMRTIlJRe3JrHqBhr1nphL0m0PSpHUg.JPEG/image.jpg",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/449707"
+           },
+           "displayProduct":{
+              "key":"6309863968",
+              "type":"SHOPPING",
+              "status":"SALE",
+              "broadcastProductStatus":"SALE",
+              "represent":true,
+              "name":"10k 14k 미니 데일리 순 금 귀걸이 피어싱",
+              "image":"https://shop-phinf.pstatic.net/20220216_245/1645000145781jT7NO_JPEG/46135979482514206_880687908.jpg",
+              "brandName":"모던라이크",
+              "mallName":"모던라이크",
+              "link":"https://shoppinglive.naver.com/bridge/live/product/6309863968?tr=lim5&isDetail=false&channelNo=100058738&trx=449707_0&wholeCategoryId=50000001%3E50000189%3E50001490%3E50004158&ntSource=nshoplive&ntMedium=449707&ntDetail=replay&ntKeyword=nshoplive",
+              "detailLink":"https://shoppinglive.naver.com/bridge/live/product/6309863968?tr=lim5&isDetail=true&channelNo=100058738&trx=449707_0&wholeCategoryId=50000001%3E50000189%3E50001490%3E50004158&ntSource=nshoplive&ntMedium=449707&ntDetail=replay&ntKeyword=nshoplive",
+              "price":33200,
+              "discountRate":21,
+              "rangePrice":false,
+              "isNpaySaving":true
+           },
+           "broadcastBanner":null,
+           "benefits":[
+              {
+                 "id":300538,
+                 "message":"봄에 어울리는 금 주얼리 10%할인",
+                 "detailMessage":"봄에 어울리는 금 주얼리 10%할인 진행",
+                 "type":"ONAIR",
+                 "broadcastId":449707
+              },
+              {
+                 "id":300539,
+                 "message":"방송 중 구매시 금세척제 증정",
+                 "detailMessage":"방송 중 구매하시는 고객님께\n14k 금 세척제 선물로 드립니다:) ",
+                 "type":"ONAIR",
+                 "broadcastId":449707
+              },
+              {
+                 "id":300540,
+                 "message":"응원댓글 시 네이버페이 5천원 증정",
+                 "detailMessage":"방송 중 응원댓글시, 모던라이크 5천원쿠폰 증정합니다\n+ 5명 증정",
+                 "type":"ONAIR",
+                 "broadcastId":449707
+              },
+              {
+                 "id":300541,
+                 "message":"2+1 > 2개 이상 구매 실반지증정",
+                 "detailMessage":"2개 이상 구매시 실버925 실반지 13호를 선물로 드립니다:)",
+                 "type":"ONAIR",
+                 "broadcastId":449707
+              }
+           ]
+        },
+        {
+           "broadcast":{
+              "id":451364,
+              "title":"봄 느낌 물씬~ 신상 라방 방송중 할인",
+              "status":"BLOCK",
+              "displayType":"OPEN",
+              "broadcastType":"NONE",
+              "streamSeq":15536920,
+              "vid":"E0B770E181DECECA0AAFB952DBF9C7F1F774",
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTVfMjA2/MDAxNjQ3MzMxNTQ1MDA1.gpPPvjdTkh0uVlzpTd_rJ1c2z939PiJXpad_mDxc-WQg.XjROQ_ikeFgPjP0pRk1H9YXqJzBPzTv-DjN77uxOBdAg.JPEG/0028AA56-501D-46E1-B258-1ED059CEBDE1.jpg",
+              "startDate":"2022-03-19T11:59:33",
+              "expectedStartDate":"2022-03-19T12:00:38.37",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/451364",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/451364",
+              "showHostName":null
+           },
+           "broadcastOwner":{
+              "id":27562,
+              "broadcasterId":"1000016332",
+              "nickname":"MISO706",
+              "exposureText":null,
+              "serviceId":"STYLE_STYLE",
+              "serviceName":"스타일윈도 로드샵",
+              "profileUrl":"http://shop1.phinf.naver.net/20160905_297/showindowCommon_1473060999940Ruwx9_JPEG/12880631862727274_-1251141135.jpg",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/27562"
+           },
+           "broadcastBridge":{
+              "id":93685,
+              "title":"봄 느낌 물씬~ MISO706 봄신상 라방",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTVfMTAx/MDAxNjQ3MzUzMjM3MjQ0.Otr-3w3mI9ot3Is41GfPhP3cwtl2KpFIepd6gwg-DhMg.9_Y53CclWJrldatMj8nqLP5xwm5TZhVFpOrvHxsVtUAg.JPEG/image.jpg",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTVfMTMx/MDAxNjQ3MzUzMjUwOTM5.QW6k42s8G-RBVtEsVyyyiaVkBZa6n1kFhLEkdgw1BLYg.H5p555PzAIlIJJT2OiILaLMhoj8hvriKnfCYr0ag3Okg.JPEG/image.jpg",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/451364"
+           },
+           "displayProduct":{
+              "key":"6416900248",
+              "type":"SHOPPING",
+              "status":"SALE",
+              "broadcastProductStatus":"SALE",
+              "represent":true,
+              "name":"[라방할인] 오브 트위드 자켓 (2color)",
+              "image":"https://shop-phinf.pstatic.net/20220315_263/1647349625247p1ghf_JPEG/48485452846799980_1015973813.jpg",
+              "brandName":null,
+              "mallName":"MISO706",
+              "link":"https://shoppinglive.naver.com/bridge/live/product/6416900248?tr=lim5&isDetail=false&channelNo=1000016332&trx=451364_0&wholeCategoryId=50000000%3E50000167%3E50000815&ntSource=nshoplive&ntMedium=451364&ntDetail=replay&ntKeyword=nshoplive",
+              "detailLink":"https://shoppinglive.naver.com/bridge/live/product/6416900248?tr=lim5&isDetail=true&channelNo=1000016332&trx=451364_0&wholeCategoryId=50000000%3E50000167%3E50000815&ntSource=nshoplive&ntMedium=451364&ntDetail=replay&ntKeyword=nshoplive",
+              "price":93000,
+              "discountRate":21,
+              "rangePrice":false,
+              "isNpaySaving":true
+           },
+           "broadcastBanner":null,
+           "benefits":[
+              
+           ]
+        },
+        {
+           "broadcast":{
+              "id":451845,
+              "title":"신상 상품10%추가할인 +3000원 쿠폰",
+              "status":"ONAIR",
+              "displayType":"OPEN",
+              "broadcastType":"NONE",
+              "streamSeq":15538197,
+              "vid":null,
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTVfMjY0/MDAxNjQ3MzU1Nzg2NjU0.2yuvcVmWCycyavqgDzTsmXjo3-fgqOgcOoAjvULBV3kg.TwWvA34aSRslu58hT_5vnCUypxlAGEN0P1924eX7Yhgg.JPEG/1646666368837.jpg",
+              "startDate":"2022-03-19T13:00:48",
+              "expectedStartDate":"2022-03-19T13:00:34.002",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/451845",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/451845",
+              "showHostName":null
+           },
+           "broadcastOwner":{
+              "id":124,
+              "broadcasterId":"1000003442",
+              "nickname":"씨샵인더룸",
+              "exposureText":null,
+              "serviceId":"STYLE_STYLE",
+              "serviceName":"스타일윈도 로드샵",
+              "profileUrl":"http://shop1.phinf.naver.net/20160527_179/showindowCommon_1464340559906v2EeI_PNG/4160191826350574_-768206429.png",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/124"
+           },
+           "broadcastBridge":{
+              "id":93692,
+              "title":"신상 추가 10% 할인+3000원 할인쿠폰 발행 기획전",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTZfNjkg/MDAxNjQ3MzU3NDEzOTUy.fQ26dHb3rgnWaEPZN0NmTKNTCEIL5UARvcI-K_YXofEg.HMRBQ8n4ZtqKgQCvmFYug8NfO8fzv0wACTZETqTUipog.JPEG/image.jpg",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTZfMjQy/MDAxNjQ3MzU3NDMwMjEw.oohcERul4Khw7yA-8Eob0c3v_RytO4eVsX13HA0PJ88g.aABCZiYrKjazkFtw5AD4RYsIlrjLRp_Zfhi3mdH11wkg.JPEG/image.jpg",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/451845"
+           },
+           "displayProduct":{
+              "key":"6396341547",
+              "type":"SHOPPING",
+              "status":"SALE",
+              "broadcastProductStatus":"SALE",
+              "represent":false,
+              "name":"주말10% 할인(신상,무료배송)세인트 레터링 배색 반팔 롱 원피스 4color",
+              "image":"https://shop-phinf.pstatic.net/20220310_85/1646908317818Xamyt_JPEG/48044163512119374_956663883.jpg",
+              "brandName":null,
+              "mallName":"씨샵인더룸",
+              "link":"https://shoppinglive.naver.com/bridge/live/product/6396341547?tr=lim5&isDetail=false&channelNo=1000003442&trx=451845_1&wholeCategoryId=50000000%3E50000167%3E50000807&ntSource=nshoplive&ntMedium=451845&ntDetail=onair&ntKeyword=nshoplive",
+              "detailLink":"https://shoppinglive.naver.com/bridge/live/product/6396341547?tr=lim5&isDetail=true&channelNo=1000003442&trx=451845_1&wholeCategoryId=50000000%3E50000167%3E50000807&ntSource=nshoplive&ntMedium=451845&ntDetail=onair&ntKeyword=nshoplive",
+              "price":17820,
+              "discountRate":40,
+              "rangePrice":false,
+              "isNpaySaving":true
+           },
+           "broadcastBanner":null,
+           "benefits":[
+              {
+                 "id":305560,
+                 "message":"2000원 장바구니 쿠폰",
+                 "detailMessage":"3만원 이상",
+                 "type":"ONAIR",
+                 "broadcastId":451845
+              },
+              {
+                 "id":305561,
+                 "message":"1000원 중복 할인 쿠폰",
+                 "detailMessage":"3만원 이상",
+                 "type":"ONAIR",
+                 "broadcastId":451845
+              }
+           ]
+        },
+        {
+           "broadcast":{
+              "id":451800,
+              "title":"♥네이버X행복여♥타임특가+최저가! 신상 입어보기!",
+              "status":"ONAIR",
+              "displayType":"OPEN",
+              "broadcastType":"NONE",
+              "streamSeq":15539729,
+              "vid":null,
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTVfMjkw/MDAxNjQ3MzUwNDc1ODgx.7_kcqFRMdr8kwFNHON5V6L6KwczuNHg2q6dwl4hKqlAg.9F8fhDQgKp7ABqjrLGHe1i8Am-Ma8N1yhPX7SbqJta8g.PNG/image.png",
+              "startDate":"2022-03-19T14:01:50",
+              "expectedStartDate":"2022-03-19T14:00:56.822",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/451800",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/451800",
+              "showHostName":null
+           },
+           "broadcastOwner":{
+              "id":212,
+              "broadcasterId":"100286575",
+              "nickname":"행복한 여자",
+              "exposureText":null,
+              "serviceId":"STYLE_STYLE",
+              "serviceName":"스타일윈도 로드샵",
+              "profileUrl":"http://shop1.phinf.naver.net/20181104_282/happygirl181101@gmail.com_1541320723190xukRg_JPEG/64627902793481582_1139244133.jpg",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/212"
+           },
+           "broadcastBridge":{
+              "id":93682,
+              "title":"네이버X행복여! 타임특가+최저가! 신상 입어보기!",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTVfMjEx/MDAxNjQ3MzUwOTgwODMx.39Z053BvhMiarT3PfMW4gbUaciqwgNaJa6Aafx3wyHIg.fpOWvR1xcg-HAQul1d1s7O8WftfzN-uleuwv_vuDbpcg.JPEG/image.jpg",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTVfMTA1/MDAxNjQ3MzUwOTg2NTc1.jVQ98IQkUPC8XWNbAU_BzAOKkmpdmkEWX1WYVs4h8zEg.ctTOhvoVYP-ZIzcppuMSCld1Zcg1_33EenKUa6L7jBog.JPEG/image.jpg",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/451800"
+           },
+           "displayProduct":{
+              "key":"6425156371",
+              "type":"SHOPPING",
+              "status":"SALE",
+              "broadcastProductStatus":"SALE",
+              "represent":false,
+              "name":"[타임특가세일]무디 린넨 마 텍스쳐 노카라 하프 자켓",
+              "image":"https://shop-phinf.pstatic.net/20220317_54/1647495682882YaYVe_JPEG/48631525426245041_1988375455.jpg",
+              "brandName":"행복한여자",
+              "mallName":"행복한 여자",
+              "link":"https://shoppinglive.naver.com/bridge/live/product/6425156371?tr=lim5&isDetail=false&channelNo=100286575&trx=451800_1&wholeCategoryId=50000000%3E50000167%3E50000815&ntSource=nshoplive&ntMedium=451800&ntDetail=onair&ntKeyword=nshoplive",
+              "detailLink":"https://shoppinglive.naver.com/bridge/live/product/6425156371?tr=lim5&isDetail=true&channelNo=100286575&trx=451800_1&wholeCategoryId=50000000%3E50000167%3E50000815&ntSource=nshoplive&ntMedium=451800&ntDetail=onair&ntKeyword=nshoplive",
+              "price":22700,
+              "discountRate":50,
+              "rangePrice":false,
+              "isNpaySaving":true
+           },
+           "broadcastBanner":null,
+           "benefits":[
+              {
+                 "id":302441,
+                 "message":"스토어찜쿠폰",
+                 "detailMessage":"3만원 이상 구매시 2천원 할인 쿠폰 제공!!",
+                 "type":"ONAIR",
+                 "broadcastId":451800
+              },
+              {
+                 "id":302442,
+                 "message":"소식알림쿠폰",
+                 "detailMessage":"구매금액 조건 없이 사용가능한 1천원 할인 쿠폰 제공!!",
+                 "type":"ONAIR",
+                 "broadcastId":451800
+              },
+              {
+                 "id":302443,
+                 "message":"타임특가세일!",
+                 "detailMessage":"라이브 방송 중에만!\n원가 이하의 타임특가 세일 진행 !!",
+                 "type":"ONAIR",
+                 "broadcastId":451800
+              }
+           ]
+        },
+        {
+           "broadcast":{
+              "id":454307,
+              "title":"제로스트릿 봄 신상아이템\uD83C\uDF38",
+              "status":"NONE",
+              "displayType":"OPEN",
+              "broadcastType":"NONE",
+              "streamSeq":null,
+              "vid":null,
+              "standByImage":"https://g-selected.pstatic.net/MjAyMjAzMTdfMTg5/MDAxNjQ3NTA1NzgzMTM4.jTBtUQ57n82UawMp56QoQirnXU0u1CIjFdrUhTEQZE0g.8mGU7n3IUo9QVofcSag_30QrkO6PG12Ut5olZaE-QBEg.JPEG/image.jpg",
+              "startDate":null,
+              "expectedStartDate":"2022-03-19T15:00:45.69",
+              "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/454307",
+              "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/454307",
+              "showHostName":null
+           },
+           "broadcastOwner":{
+              "id":602,
+              "broadcasterId":"100680598",
+              "nickname":"김금주 제로스트릿",
+              "exposureText":null,
+              "serviceId":"DESIGNER",
+              "serviceName":"디자이너윈도",
+              "profileUrl":"http://shop1.phinf.naver.net/20211224_155/1640327033703XFItl_PNG/163634286075471393_1575174038.png",
+              "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/602"
+           },
+           "broadcastBridge":{
+              "id":94255,
+              "title":"제로스트릿 봄 신상아이템\uD83C\uDF38",
+              "backgroundImage":"https://g-selected.pstatic.net/MjAyMjAzMTdfMjMg/MDAxNjQ3NTA1NjgwMTkz.5SmnNAvwX5dS0KEeiI_xViDMdNgW4j8cQxdrZJ_9rjwg.JnkooP_yLLwuuNPYI9R-N2WvsbrB-KDuBtVTx3jK_jog.JPEG/image.jpg",
+              "backgroundImagePc":"https://g-selected.pstatic.net/MjAyMjAzMTdfOTMg/MDAxNjQ3NTA1NjgzMjUx.xeVdJzAc4E38s_6WB35xbFkm7T46Eu_PPIFzRxsDsmUg.6iRI5lWIISHUfbQ_oQYPApuL7-4C3U1T9LHx0mG0kh0g.JPEG/image.jpg",
+              "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/454307"
+           },
+           "displayProduct":{
+              "key":"6319985884",
+              "type":"SHOPPING",
+              "status":"SALE",
+              "broadcastProductStatus":"SALE",
+              "represent":false,
+              "name":"[제로스트릿]제로 체크 자켓 ZERO CHECK JACKET / PINK",
+              "image":"https://shop-phinf.pstatic.net/20220218_154/16451838344564jCCc_JPEG/46319677123963013_722091479.jpg",
+              "brandName":"제로스트릿",
+              "mallName":"김금주 제로스트릿",
+              "link":"https://shoppinglive.naver.com/bridge/live/product/6319985884?tr=lim5&isDetail=false&channelNo=100680598&trx=454307_0&wholeCategoryId=50000000%3E50000167%3E50000815&ntSource=nshoplive&ntMedium=454307&ntDetail=onair&ntKeyword=nshoplive",
+              "detailLink":"https://shoppinglive.naver.com/bridge/live/product/6319985884?tr=lim5&isDetail=true&channelNo=100680598&trx=454307_0&wholeCategoryId=50000000%3E50000167%3E50000815&ntSource=nshoplive&ntMedium=454307&ntDetail=onair&ntKeyword=nshoplive",
+              "price":98450,
+              "discountRate":45,
+              "rangePrice":false,
+              "isNpaySaving":true
+           },
+           "broadcastBanner":null,
+           "benefits":[
+              {
+                 "id":304504,
+                 "message":"10만원 이상 구매시 니트숄 증정",
+                 "detailMessage":"10만원 이상 구매시 니트숄 증정",
+                 "type":"ONAIR",
+                 "broadcastId":454307
+              },
+              {
+                 "id":304505,
+                 "message":"소식받기, 스토어찜 1000원 쿠폰",
+                 "detailMessage":"소식받기, 스토어찜 1000원 쿠폰",
+                 "type":"ONAIR",
+                 "broadcastId":454307
+              },
+              {
+                 "id":304506,
+                 "message":"리뷰퀸 선정 : 3000원 할인쿠폰",
+                 "detailMessage":"리뷰퀸 선정 : 3000원 할인쿠폰",
+                 "type":"ONAIR",
+                 "broadcastId":454307
+              },
+              {
+                 "id":304507,
+                 "message":"댓글이벤트 : 사은품 증정(2명)",
+                 "detailMessage":"댓글이벤트 : 사은품 증정(2명)",
+                 "type":"ONAIR",
+                 "broadcastId":454307
+              }
+           ]
         }
-      ]
-    },
-    {
-      "broadcastId":56747,
-      "streamSeq":7726887,
-      "memberId":null,
-      "channelNo":100965738,
-      "bridgeId":6004,
-      "urlId":"네띠",
-      "nickname":"네띠",
-      "serviceId":"KIDS",
-      "serviceName":"키즈윈도",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAxMjBfMTcx/MDAxNjExMTEwODQzMjA5.Uq2vOF0WRT77WU6-1zC-8jtiRSgqKvOMIdxejbM283Mg.tweuqiZKfVWLEX9iqsOpDQVGGK591aB4pCBPhHk42HIg.JPEG/live_up1.jpg",
-      "profileImage":"http://shop1.phinf.naver.net/20201112_177/1605165241989hChhp_JPEG/6301137716788632_435337160.jpg",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAxMjBfOTcg/MDAxNjExMTIyNjk1ODUx.lTbElAulzd6ufz8srWIyurKwTy0AM8KUSTWU_9TFWgQg.sQXmSPRY6lIYMiJD9rZwnDr6HpzVCWgYra2yp3O4AgEg.JPEG/800x696_%EC%98%88%EA%B3%A0%ED%8E%98%EC%9D%B4%EC%A7%80.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAxMjBfMjE4/MDAxNjExMTIyNzA0MTI0.y44GhcRPR7dog9Pd4oxm8qkL2eTqL_EENrfzxLgK8bUg.YkDTwhGK7bwiBIGeMKw1AuwEgXcHRARHgSREEjCdBOwg.JPEG/1440x675_%EC%98%88%EA%B3%A0%ED%8E%98%EC%9D%B4%EC%A7%80.jpg",
-      "broadcastTitle":"[키즈라이브데이] 스웨덴 친환경 네띠 기저귀",
-      "broadcastBridgeTitle":"스웨덴 네띠 친환경 기저귀, 유해한 화학성분이 없습니다",
-      "vid":"E1553F043C02736E8199B91BC25D528DC609",
-      "startDate":"2021-02-02T11:59:52.21",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T12:00:52.038",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/63725",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/56747",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/56747",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/56747",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":null,
-      "broadcastType":"PLANNING",
-      "showHostName":"",
-      "displayProduct":{
-        "key":"5212688787",
-        "productType":"SHOPPING",
-        "productStatus":"SALE",
-        "broadcastProductStatus":"SALE",
-        "represent":true,
-        "name":"[Eco by Naty] 네띠 친환경 기저귀 밴드형 2단계 33매 x 4팩",
-        "image":"http://shop1.phinf.naver.net/20201111_109/1605080938172N8sNp_JPEG/6216765995594335_1857631757.jpg",
-        "brandName":"네띠",
-        "mallName":"네띠",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/5212688787?tr=lim&isDetail=false&channelNo=100965738&trx=56747_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/5212688787?tr=lim&isDetail=true&channelNo=100965738&trx=56747_0",
-        "price":42850,
-        "discountRate":23,
-        "specialPrice":40700,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
-
-      ]
-    },
-    {
-      "broadcastId":62556,
-      "streamSeq":7727595,
-      "memberId":null,
-      "channelNo":100419781,
-      "bridgeId":7039,
-      "urlId":"랜선식당",
-      "nickname":"랜선식당",
-      "serviceId":"STOREFARM",
-      "serviceName":"스토어팜",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAxMjlfMTAz/MDAxNjExODgzNjEyOTMx.TBTVPHUyDMIpAbmAbHUNHjExOTiWogZfqwPQEMBedDEg.7ObUN-Loo-2ZWMF4NT9z_2qB62MYEr58oEoiEq1QiHsg.JPEG/live_up1.jpg",
-      "profileImage":"http://shop1.phinf.naver.net/20191202_146/15752744694395XVgH_JPEG/12636012047435977_358024020.jpg",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAxMjlfMTY2/MDAxNjExODgzODg4MTE5.q_9tnu7Kefm8vMhZ0VNU2pFOGP86jFtmRtLaBFDCbKQg.1evJo1fDlzgiVIBLPdMcRX2wRyUstQmZ_iUT0pe-qnMg.JPEG/2%EC%B0%A8_800x696.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAxMjlfOSAg/MDAxNjExODgzODkyOTQ4.EPe76yX9xXjdo07XEOqyFO7l7BpT1L49_0rmlBMzKPIg.QbkD53H9KBpFYcDhdOZSvQ0f2CDCL8_ptoLD9ewik6sg.JPEG/2%EC%B0%A8_1440x675.jpg",
-      "broadcastTitle":"[시장명물] 설프라이즈~ 지역과 상생하는 청년상인",
-      "broadcastBridgeTitle":"[시장명물] 설프라이즈~ 지역과 상생하는 청년상인",
-      "vid":"B1CBE7BE7F1BFB563CABE6FC53CE832936A1",
-      "startDate":"2021-02-02T12:59:56.069",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T13:00:53.578",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/51481",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/62556",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/62556",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/62556",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":null,
-      "broadcastType":"PLANNING",
-      "showHostName":"김재희 쇼호스트",
-      "displayProduct":{
-        "key":"5102758697",
-        "productType":"SHOPPING",
-        "productStatus":"SALE",
-        "broadcastProductStatus":"SALE",
-        "represent":true,
-        "name":"진주유등빵 20개입 [진주남강유등축제 특산품] 당일생산/당일발송/디저트/답례품/기념품/행사답례품/행사기념품/수능선물/수능대박선물/합격기원",
-        "image":"http://shop1.phinf.naver.net/20200907_297/1599467110743FL21c_PNG/36829444344366682_118963351.png",
-        "brandName":null,
-        "mallName":"진주유등빵몰",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/5102758697?tr=lim&isDetail=false&channelNo=100889529&trx=62556_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/5102758697?tr=lim&isDetail=true&channelNo=100889529&trx=62556_0",
-        "price":16000,
-        "discountRate":0,
-        "specialPrice":0,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
-        {
-          "id":4680,
-          "message":"라이브 특가 할인",
-          "detailMessage":"각 상품별 상이",
-          "type":"ONAIR"
-        },
-        {
-          "id":4681,
-          "message":"방송중 구매시 무료배송",
-          "detailMessage":"라이브 방송 중 구매시 배송비 무료!",
-          "type":"ONAIR"
-        }
-      ]
-    },
-    {
-      "broadcastId":60989,
-      "streamSeq":7728649,
-      "memberId":null,
-      "channelNo":100393516,
-      "bridgeId":6784,
-      "urlId":"마이쪄",
-      "nickname":"마이쪄",
-      "serviceId":"STOREFARM",
-      "serviceName":"스토어팜",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAxMjdfMjY4/MDAxNjExNzE3MjE2MDQz.RSx2RMYyCk7WLnm-ICGY2UDyZN8qz3-fH6hyxuuJjQYg.TeynFWeltHJojN_O3v-37X_zpxSGCa0mIsocYFBzpSsg.JPEG/live_up1.jpg",
-      "profileImage":"http://shop1.phinf.naver.net/20201118_102/1605679809809PTGDC_PNG/6815589529538959_1875084692.png",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAxMjdfMjQg/MDAxNjExNzE3NTY4Mjc3.OTuiLg4NM01GdehuIucePHPKivyIgvwB2-7LaW5x2-gg.vQ34FUPjQtKJNQIwmLRP-MhDxAom7-fC0NtCsMWNelMg.JPEG/%EB%B8%8C%EB%A6%BF%EC%A7%80_mobile.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAxMjdfMTU0/MDAxNjExNzE3NTYzMjc5.wEhwsXkV9AVnA47PEXkziw7IUY3WfxzH2ya6w7oUVlMg.CTbWzi0lL18E3UvgEALgGem-9tkmGDt5CMAlOIRC5o0g.JPEG/%EB%B8%8C%EB%A6%BF%EC%A7%80_pc.jpg",
-      "broadcastTitle":"마이쪄 설 기념 찐 라이브! 핵폭탄 할인 이벤트!",
-      "broadcastBridgeTitle":"마이쪄 설 기념 찐 라이브! 핵폭탄 할인 이벤트!",
-      "vid":"A263C7059128CE98404356E9BE4B1EE33E3D",
-      "startDate":"2021-02-02T14:00:09.318",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T14:00:10.01",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/50503",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/60989",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/60989",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/60989",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":null,
-      "broadcastType":"PLANNING",
-      "showHostName":"마이쪄 전천명이사, 마이쪄 김솔대리",
-      "displayProduct":{
-        "key":"4678943756",
-        "productType":"SHOPPING",
-        "productStatus":"SALE",
-        "broadcastProductStatus":"SALE",
-        "represent":true,
-        "name":"식탁위 방앗간 마이쪄 ( 백설기 재료 )",
-        "image":"http://shop1.phinf.naver.net/20200822_282/159808443820066lD9_JPEG/35446771778817423_1095360466.JPG",
-        "brandName":"자체브랜드",
-        "mallName":"마이쪄",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/4678943756?tr=lim&isDetail=false&channelNo=100393516&trx=60989_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/4678943756?tr=lim&isDetail=true&channelNo=100393516&trx=60989_0",
-        "price":69900,
-        "discountRate":43,
-        "specialPrice":68900,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
-        {
-          "id":4369,
-          "message":"라이브 사전 URL 공유 이벤트",
-          "detailMessage":" 3명이상이 있는 카카오톡 단톡방에 마이쪄 라이브의 URL(을 )을 공유해주세요.캡쳐화면과 함께 마이쪄(카카오톡)에게 톡 보내주시면 사전 이벤트 참가 완료!",
-          "type":"PRIOR"
-        },
-        {
-          "id":4370,
-          "message":"친구 추가 이벤트",
-          "detailMessage":"생방송 중 카카오톡 마이쪄 채널 친구 추가 이벤트 (라이스파이 15set)",
-          "type":"ONAIR"
-        },
-        {
-          "id":4371,
-          "message":"퀴즈 이벤트",
-          "detailMessage":"라이브 퀴즈 이벤트 (라이스파이 15set)",
-          "type":"ONAIR"
-        },
-        {
-          "id":4372,
-          "message":"인스타 해시태그 이벤트",
-          "detailMessage":"인스타 해시태그 이벤트 (라이스파이 10set)",
-          "type":"ONAIR"
-        }
-      ]
-    },
-    {
-      "broadcastId":51519,
-      "streamSeq":7728633,
-      "memberId":null,
-      "channelNo":1000015721,
-      "bridgeId":6860,
-      "urlId":"끌레오 핸드메이드 가구",
-      "nickname":"끌레오 핸드메이드 가구",
-      "serviceId":"LIVING_HOME_LIVING",
-      "serviceName":"리빙윈도 홈&데코",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAxMTFfMjQ3/MDAxNjEwMzM1NTczMjcz.sNUsDMD4QQDBAn_74g5b_IVNl8SBVB84_1KJs84Z-rUg.K4N6noVTp2PoXETL965dCVtEGATuzE78rRkammL3HI4g.JPEG/50C7C02F-8403-496C-8966-67B69B2B5E1F.jpg",
-      "profileImage":"http://shop1.phinf.naver.net/20171018_73/thecleo_1508296034867eqRh0_JPEG/31603228511641328_-152814494.jpg",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAxMjdfNzUg/MDAxNjExNzM3NDAxNjg1.88YsKz4DxhNy4wAjstWNCe7dS2TXMqhI9misBIgF2XQg.Cgm6t3VEG-2n3ndi5Gud2aKCOh61RcZs5NNyM45oBNEg.JPEG/2%EC%9B%94-2%EC%9D%BC-%EB%AA%A8%EB%B0%94%EC%9D%BC.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAxMjdfMTgw/MDAxNjExNzM3NDA2ODc0.-XQjW41w2lSnA_M75EQDeZ31uiiLIb23qU3wkq-G8-4g.Fv2Ivp2oNjsv2OJALhj1pZ9GV-lUr0C1EPzFUuYptP0g.JPEG/2%EC%9B%94-2%EC%9D%BC-%ED%94%BC%EC%94%A8.jpg",
-      "broadcastTitle":"품격있는 공간엔 언제나 끌레오 핸드메이드 가구!",
-      "broadcastBridgeTitle":"품격있는 공간엔 언제나 끌레오 핸드메이드 가구!",
-      "vid":"08C7F76F71E9676813EF2780974B2E7A6B6B",
-      "startDate":"2021-02-02T13:59:52.469",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T14:00:07.329",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/25950",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/51519",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/51519",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/51519",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":null,
-      "broadcastType":"NONE",
-      "showHostName":null,
-      "displayProduct":{
-        "key":"4988821782",
-        "productType":"SHOPPING",
-        "productStatus":"SALE",
-        "broadcastProductStatus":"SALE",
-        "represent":true,
-        "name":"[희망일배송] 프리미엄 파멜라 흑진주펄 이태리 천연 면피 통가죽 침대 CL372",
-        "image":"http://shop1.phinf.naver.net/20200626_194/1593163032942HUB0W_JPEG/30526421457833997_2128264673.jpg",
-        "brandName":"끌레오",
-        "mallName":"끌레오 핸드메이드 가구",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/4988821782?tr=lim&isDetail=false&channelNo=1000015721&trx=51519_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/4988821782?tr=lim&isDetail=true&channelNo=1000015721&trx=51519_0",
-        "price":2890000,
-        "discountRate":21,
-        "specialPrice":2880000,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
-        {
-          "id":5236,
-          "message":"라이브 단독 특가 최대 58% 할인!",
-          "detailMessage":"오로지 라이브에서만 만나볼 수 있는 초.특.가!\n라이브가 끝나면 없을 가격! 절대로 놓치지 마세요~!",
-          "type":"ONAIR"
-        },
-        {
-          "id":5237,
-          "message":"★응원 댓글 작성 시 상품권 증정★",
-          "detailMessage":"끌레오 사전 댓글 이벤트!\n응원 댓글을 작성해주신 고객님들 중 총 세분을 선정하여 신세계 백화점 상품권 10,000원권 증정!",
-          "type":"ONAIR"
-        },
-        {
-          "id":5238,
-          "message":"라이브 퀴즈를 맞추면 커피쿠폰 증정!",
-          "detailMessage":"방송 중간중간 나오는 깜짝 퀴즈를 맞히신 고객님께는\n스타벅스 기프티콘 100% 증정!\n",
-          "type":"ONAIR"
-        },
-        {
-          "id":5239,
-          "message":"소통왕이 되면 1만원 상품권 증정!",
-          "detailMessage":"참여도가 가장 높은 고객님께 총 세분께\n신세계 상품권 10,000원 증정!",
-          "type":"ONAIR"
-        },
-        {
-          "id":5240,
-          "message":"고급 벨벳 체어 2개 사은품 증정!!",
-          "detailMessage":"파멜라 침대 라이브 구매 혜택!\n20만원 상당의 고급 벨벳 체어 2개 증정!\n",
-          "type":"ONAIR"
-        },
-        {
-          "id":5551,
-          "message":"구매 후기 작성 시 신세계 상품권을!",
-          "detailMessage":"조건 충족 시 후기만 작성해도 신세계 상품권 10,000원 증정!",
-          "type":"ONAIR"
-        },
-        {
-          "id":5552,
-          "message":"베스트후기 선정시 5,000P 지급!",
-          "detailMessage":"매달 진행되는 베스트 리뷰어가 되는 고객님께는 5,000P 를 추가로 지급해드립니다!",
-          "type":"ONAIR"
-        }
-      ]
-    },
-    {
-      "broadcastId":61301,
-      "streamSeq":7729915,
-      "memberId":null,
-      "channelNo":100239692,
-      "bridgeId":6845,
-      "urlId":"일월eSHOP",
-      "nickname":"일월eSHOP",
-      "serviceId":"STOREFARM",
-      "serviceName":"스토어팜",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAxMjdfMzAg/MDAxNjExNzM0MzAwNjc4.jhElY41XKnXEf0kV6EJ1ASPxt_fLYTMtMhFAHEio09Ag.xpeIT8nofczUwSY2TL-uHboDvit03yXcxDjw8Rbjp3sg.JPEG/live_up1.jpg",
-      "profileImage":"http://shop1.phinf.naver.net/20180921_103/mirabell_1537488886208GUOIq_PNG/60796045825858209_1717574044.png",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAxMjdfMTEg/MDAxNjExNzM0NDc4NjAz.ouuqQTapUsxqYSBwnU5ESsLmUG8jFZ37COyLcdanCsgg.xTOSv78kFzzO6EQyanrt7SpzV74zy7tOfr5eZTYM2p4g.JPEG/1.MW_800x696.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAxMjdfMjM5/MDAxNjExNzM0NDg0NjQ2.g6KRrnir_U6vLjpYO9Vq8TTqwKu8cyrpv7kAWdqE6GQg.zBZJwDGMMjILguoDHx9JJaA9fvdggKXVopvor-ntDeQg.JPEG/2.PC_1440x675.jpg",
-      "broadcastTitle":"일월 순면매트 삼총사 출동! LIVE 역대급 초특가! ",
-      "broadcastBridgeTitle":"일월 순면매트 삼총사 출동! LIVE 역대급 초특가! ",
-      "vid":"3331EE72BDC6FC2B9120B8F9CBAAE92FA905",
-      "startDate":"2021-02-02T15:00:09.062",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T15:00:02.949",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/60462",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/61301",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/61301",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/61301",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":null,
-      "broadcastType":"PLANNING",
-      "showHostName":"일월 회장님 이광모/쇼호스트 박준영",
-      "displayProduct":{
-        "key":"3564799198",
-        "productType":"SHOPPING",
-        "productStatus":"SALE",
-        "broadcastProductStatus":"SALE",
-        "represent":false,
-        "name":"2021년형 일월전기매트 최고급형 온열 전기장판",
-        "image":"http://shop1.phinf.naver.net/20210202_218/16122447413821vWbh_JPEG/13380525086353526_709892247.jpg",
-        "brandName":"일월",
-        "mallName":"일월eSHOP",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/3564799198?tr=lim&isDetail=false&channelNo=100239692&trx=61301_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/3564799198?tr=lim&isDetail=true&channelNo=100239692&trx=61301_0",
-        "price":55000,
-        "discountRate":81,
-        "specialPrice":45000,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
-        {
-          "id":4390,
-          "message":"라이브 중 혜택 및 이벤트 내역",
-          "detailMessage":"댓글소통왕 5분 선정 일월 마스크 증정",
-          "type":"ONAIR"
-        },
-        {
-          "id":4391,
-          "message":"라이브 중 혜택 및 이벤트 내역",
-          "detailMessage":"라이브 전 상품 최대 2만원 할인 쿠폰 증정",
-          "type":"ONAIR"
-        },
-        {
-          "id":4392,
-          "message":"라이브 중 혜택 및 이벤트 내역",
-          "detailMessage":"방송 중 히든 퀴즈",
-          "type":"ONAIR"
-        }
-      ]
-    },
-    {
-      "broadcastId":59374,
-      "streamSeq":7732811,
-      "memberId":null,
-      "channelNo":500229989,
-      "bridgeId":6446,
-      "urlId":"남도 장터",
-      "nickname":"남도 장터",
-      "serviceId":"STOREFARM",
-      "serviceName":"스토어팜",
-      "broadcastStandByImage":"https://g-selected.pstatic.net/MjAyMTAxMjVfMjM3/MDAxNjExNTQwOTQ0NTQ1.0FukwkXuAm7qgya7d1_3pk3yihxXEZQrbqO3hkDXdbgg.vnXMnYbTmk_zsPmaP2IvmNZS5UQFRiGrNvBvtoIwFywg.JPEG/live_up1.jpg",
-      "profileImage":"http://shop1.phinf.naver.net/20191120_287/1574214597812CFtTB_JPEG/11574432360388712_1651095039.jpg",
-      "broadcastBridgeMobileImage":"https://g-selected.pstatic.net/MjAyMTAxMjVfMjcg/MDAxNjExNTQxMDI3MDU5.07YV4a0ZfXtSrAW7zwoX4WQg3r3TXe-ytJCf0mxyDAQg.9ZROY_7CZ4Cv2O3CJlPbXWBL1vUmLncPiLjdHcY8ynsg.JPEG/%EB%B8%8C%EB%A6%BF%EC%A7%80%EC%9D%B4%EB%AF%B8%EC%A7%80_%EB%AA%A8%EB%B0%94%EC%9D%BC.jpg",
-      "broadcastBridgePcImage":"https://g-selected.pstatic.net/MjAyMTAxMjVfMjQx/MDAxNjExNTQxMDM4MzM4.LrrI6jm9sEksSWwP7x56vfRovScIxAbaKNT4ibpQm7Ig.U_1bhB2JAbKNnFO4ZD2v5yChilOaWDfzV8pcNlRZENcg.JPEG/%EB%B8%8C%EB%A6%BF%EC%A7%80%EC%9D%B4%EB%AF%B8%EC%A7%80_PC.jpg",
-      "broadcastTitle":"전라남도 신안 x 고흥 설 선물세트",
-      "broadcastBridgeTitle":"전라남도 신안 x 고흥 설 선물세트",
-      "vid":"89752A7E095584EF21271F9560851ACEB3E3",
-      "startDate":"2021-02-02T17:00:04.542",
-      "status":"BLOCK",
-      "expectedStartDate":"2021-02-02T17:00:08.056",
-      "broadcasterEndUrl":"https://shoppinglive.naver.com/channels/525",
-      "broadcastEndUrl":"https://view.shoppinglive.naver.com/lives/59374",
-      "broadcastReplayEndUrl":"https://view.shoppinglive.naver.com/replays/59374",
-      "bridgeEndUrl":"https://shoppinglive.naver.com/livebridge/59374",
-      "displayType":null,
-      "channelExposureText":null,
-      "nicknameDescription":null,
-      "broadcastType":"PLANNING",
-      "showHostName":"유튜버 맛상무, 아나운서 이경림",
-      "displayProduct":{
-        "key":"5349324381",
-        "productType":"SHOPPING",
-        "productStatus":"OUTOFSTOCK",
-        "broadcastProductStatus":"CLOSE",
-        "represent":true,
-        "name":"[설맞이] 고흥 석류즙 100ml x 30포",
-        "image":"http://shop1.phinf.naver.net/20210121_8/16112179591028XLcI_JPEG/110512_1.jpg",
-        "brandName":"남도장터(257739)",
-        "mallName":"남도 장터",
-        "link":"https://shoppinglive.naver.com/bridge/live/product/5349324381?tr=lim&isDetail=false&channelNo=500229989&trx=59374_0",
-        "detailLink":"https://shoppinglive.naver.com/bridge/live/product/5349324381?tr=lim&isDetail=true&channelNo=500229989&trx=59374_0",
-        "price":13900,
-        "discountRate":54,
-        "specialPrice":12900,
-        "rangePrice":false
-      },
-      "broadcastBanner":null,
-      "benefits":[
-        {
-          "id":4138,
-          "message":"스토어찜 1,000원",
-          "detailMessage":"",
-          "type":"ONAIR"
-        }
-      ]
-    }
-  ],
-  "next":1612256421002
+     ],
+     "prev":"",
+     "next":"164766964500454307"
+  }
 }

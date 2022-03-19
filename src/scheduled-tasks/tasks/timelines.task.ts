@@ -33,13 +33,15 @@ export class TimelinesTask {
       const startOfTodayTimestamp = getStartOfDayTimestamp(date);
 
       // 해당 날짜의 시작 시간부터 있는 전체 방송 타임라인 데이터를 조회
-      const timelineData = await this.timelineRepository.getTimeline(startOfTodayTimestamp);
+      const { currentData, nextData } = await this.timelineRepository.getTimeline(startOfTodayTimestamp);
 
-      if (timelineData?.list?.length > 0) {
+      if (currentData && nextData?.list?.length > 0) {
+        const timelineData = [currentData, ...nextData.list];
+
         // 조회한 데이터를 DB에 저장
         const createdTimeline = await this.timelinesService.findLatestAndOverwrite({
           date,
-          broadcasts: timelineData?.list,
+          broadcasts: timelineData,
         });
 
         this.logger.log(`[${getNow()}] **END** - 방송 전체 타임라인 데이터를 가져와서 저장`);

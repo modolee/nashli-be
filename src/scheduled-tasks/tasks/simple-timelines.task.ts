@@ -5,7 +5,6 @@ import { Timeline } from '@timelines/schemas/timeline.schema';
 import { TimelinesService } from '@timelines/services/timelines.service';
 import { Broadcast } from '@broadcasts/schemas/broadcast.schema';
 import { BroadcastsService } from '@broadcasts/services/broadcasts.service';
-import { SimpleTimeline } from '@simple-timelines/schemas/simple-timeline.schema';
 import { SimpleTimelinesService } from '@simple-timelines/services/simple-timelines.service';
 import { sendTelegramMessage } from '@common/helpers/telegram.helper';
 import he from 'he';
@@ -142,30 +141,35 @@ export class SimpleTimelinesTask {
 
       // 타임라인 전체를 돌면서 방송ID, 방송제목, 시작시간, URL을 추출
       // 세부 방송 정보에서는 네이버페이 지급 여부를 확인
-      timeline.broadcasts.map(({ broadcastId, broadcastTitle, expectedStartDate, bridgeEndUrl, broadcastEndUrl }) => {
-        // 세부 방송 정보가 있는 경우에만 단순화 한 타임라인에 추가
-        if (broadcast.broadcastsDetail[`${broadcastId}`]) {
-          const time = this.getShortTime(expectedStartDate);
-          const contentsHtml = broadcast.broadcastsDetail[`${broadcastId}`].contentsHtml;
-          const reward = this.getRewardType(contentsHtml);
-          const additionalInfo = this.getAdditionalInfo(contentsHtml);
+      timeline.broadcasts.map(
+        ({
+          broadcast: { id: broadcastId, title: broadcastTitle, expectedStartDate, broadcastEndUrl },
+          broadcastBridge: { bridgeEndUrl },
+        }) => {
+          // 세부 방송 정보가 있는 경우에만 단순화 한 타임라인에 추가
+          if (broadcast.broadcastsDetail[`${broadcastId}`]) {
+            const time = this.getShortTime(expectedStartDate);
+            const contentsHtml = broadcast.broadcastsDetail[`${broadcastId}`].contentsHtml;
+            const reward = this.getRewardType(contentsHtml);
+            const additionalInfo = this.getAdditionalInfo(contentsHtml);
 
-          const simpleBroadcast = {
-            id: broadcastId,
-            title: broadcastTitle,
-            broadcastUrl: broadcastEndUrl,
-            bridgeUrl: bridgeEndUrl,
-            reward,
-            additionalInfo,
-          };
+            const simpleBroadcast = {
+              id: broadcastId,
+              title: broadcastTitle,
+              broadcastUrl: broadcastEndUrl,
+              bridgeUrl: bridgeEndUrl,
+              reward,
+              additionalInfo,
+            };
 
-          if (!simpleBroadcasts[time]) {
-            simpleBroadcasts[time] = [simpleBroadcast];
-          } else {
-            simpleBroadcasts[time] = [simpleBroadcast, ...simpleBroadcasts[time]];
+            if (!simpleBroadcasts[time]) {
+              simpleBroadcasts[time] = [simpleBroadcast];
+            } else {
+              simpleBroadcasts[time] = [simpleBroadcast, ...simpleBroadcasts[time]];
+            }
           }
-        }
-      });
+        },
+      );
 
       // 단순화 시킨 데이터를 DB에 저장
       const createdSimpleTimeline = await this.simpleTimelinesService.findLatestAndOverwrite({

@@ -36,20 +36,22 @@ describe('TimelineService', () => {
     expect(service).toBeDefined();
   });
 
-  it('Get timeline data - 성공', async () => {
+  it.only('Get timeline data - 성공', async () => {
     // GIVEN
     const startOfTodayTimestamp = getStartOfDayTimestamp(today);
 
     // WHEN
-    const { list, next } = await repository.getTimeline(startOfTodayTimestamp);
+    const { currentData, nextData } = await repository.getTimeline(startOfTodayTimestamp);
+
+    const timelineData = [currentData, ...nextData.list];
 
     // THEN
-    expect(list.length).toBeGreaterThan(0);
+    expect(timelineData.length).toBeGreaterThan(0);
   });
 
   it('Create Timeline - 성공', async () => {
     // GIVEN
-    const timeline = { date: today, broadcasts: timelineDummy.list };
+    const timeline = { date: today, broadcasts: [timelineDummy.currentData, ...timelineDummy.nextData.list] };
 
     // WHEN
     const createdTimeline = await service.create(timeline);
@@ -58,7 +60,7 @@ describe('TimelineService', () => {
     expect(createdTimeline).toMatchObject(timeline);
   });
 
-  it.only('Find Timeline - 성공', async () => {
+  it('Find Timeline - 성공', async () => {
     // GIVEN
 
     // WHEN

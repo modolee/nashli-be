@@ -32,7 +32,9 @@ export class BroadcastsTask {
       // }
 
       const broadcastsData = await Promise.all(
-        timeline.broadcasts.map(({ broadcastId }) => this.broadcastRepository.getBroadcast(broadcastId)),
+        timeline.broadcasts.map(({ broadcast: { id: broadcastId } }) =>
+          this.broadcastRepository.getBroadcast(broadcastId),
+        ),
       );
 
       const broadcastsDetail = {};
