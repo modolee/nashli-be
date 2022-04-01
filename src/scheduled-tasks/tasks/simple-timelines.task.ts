@@ -131,9 +131,9 @@ export class SimpleTimelinesTask {
   /**
    * 타임라인을 단순화하여 저장
    * @param timeline
-   * @param broadcast
+   * @param savedBroadcast
    */
-  async simplifyTimlinesAndSave(timeline: Timeline, broadcast: Broadcast) {
+  async simplifyTimlinesAndSave(timeline: Timeline, savedBroadcast: Broadcast) {
     try {
       this.logger.log(`[${getNow()}] **START** - 단순화 시킨 타임라인 저장`);
 
@@ -141,15 +141,14 @@ export class SimpleTimelinesTask {
 
       // 타임라인 전체를 돌면서 방송ID, 방송제목, 시작시간, URL을 추출
       // 세부 방송 정보에서는 네이버페이 지급 여부를 확인
-      timeline.broadcasts.map(
-        ({
-          broadcast: { id: broadcastId, title: broadcastTitle, expectedStartDate, broadcastEndUrl },
-          broadcastBridge: { bridgeEndUrl },
-        }) => {
+      timeline.broadcasts.map(({ broadcast, broadcastBridge }) => {
+        if (broadcast && broadcastBridge) {
+          const { id: broadcastId, title: broadcastTitle, expectedStartDate, broadcastEndUrl } = broadcast;
+          const { bridgeEndUrl } = broadcastBridge;
           // 세부 방송 정보가 있는 경우에만 단순화 한 타임라인에 추가
-          if (broadcast.broadcastsDetail[`${broadcastId}`]) {
+          if (savedBroadcast.broadcastsDetail[`${broadcastId}`]) {
             const time = this.getShortTime(expectedStartDate);
-            const contentsHtml = broadcast.broadcastsDetail[`${broadcastId}`].contentsHtml;
+            const contentsHtml = savedBroadcast.broadcastsDetail[`${broadcastId}`].contentsHtml;
             const reward = this.getRewardType(contentsHtml);
             const additionalInfo = this.getAdditionalInfo(contentsHtml);
 
@@ -168,8 +167,8 @@ export class SimpleTimelinesTask {
               simpleBroadcasts[time] = [simpleBroadcast, ...simpleBroadcasts[time]];
             }
           }
-        },
-      );
+        }
+      });
 
       // 단순화 시킨 데이터를 DB에 저장
       const createdSimpleTimeline = await this.simpleTimelinesService.findLatestAndOverwrite({
